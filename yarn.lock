@@ -9458,6 +9458,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-collapse@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-collapse/-/react-collapse-5.1.0.tgz#36f69ecb0fe797f976aaf5e4f2b2c248d2760140"
+  integrity sha512-5v0ywsn9HjiR/odNzbRDs0RZfrnbdSippJebWOBCFFDA12Vx8DddrbI4qWVf1P2wTiVagrpcSy07AU0b6+gM9Q==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
@@ -9503,6 +9508,11 @@ react-dropdown@^1.9.2:
   integrity sha512-g4eufErTi5P5T5bGK+VmLl//qvAHy79jm6KKx8G2Tl3mG90bpigb+Aw85P+C2JUdAnIIQdv8kP/oHN314GvAfw==
   dependencies:
     classnames "^2.2.3"
+
+react-emotion@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-10.0.0.tgz#03adf5a93f9dc41396401551566adf9668a2418e"
+  integrity sha512-HMEH1I0m4AxJzG31ii/g227WhR0RBlRdr2M4C0n7yg9s3SiAPGB7lxvc/EoE8ixU9PLeOlBOb/n0wo42tGu99Q==
 
 react-error-overlay@^6.0.9:
   version "6.0.9"
