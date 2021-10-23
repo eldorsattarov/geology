@@ -21,13 +21,13 @@ const HeaderUpper = () => {
                             </DropdownToggle>
                             <DropdownMenu className="dropMenu">
                                 <DropdownItem className="dropItem"><Link to="/enterprise1">"Госгеолинформанцент" давлат корхонасининг мақсад ва вазифалари</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Ходимлар</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Асосий тугалланган лойиҳалар</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Саноат кўрсатмалар ва қоидалар</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Вазирлар махкамасининг 546 сонли карорм</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Корхона Ёшлар Иттифоқи</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Касаба уюшмаси</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Контакт</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/staff">Ходимлар</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Асосий тугалланган лойиҳалар</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Саноат кўрсатмалар ва қоидалар</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Вазирлар махкамасининг 546 сонли карорм</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/youthunion">Корхона Ёшлар Иттифоқи</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Касаба уюшмаси</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Контакт</Link></DropdownItem>
 
 
                             </DropdownMenu>
