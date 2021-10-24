@@ -1,3 +1,20 @@
+//Fonts sytle
+//@font-face {
+//  font-family: "Inter-Bold";
+//  src: url("./public/font/Inter/Inter-Bold.ttf") format("truetype");
+//}
+//@font-face {
+//  font-family: "Inter-Regular";
+//  src: url("./public/font/Inter/Inter-Regular.ttf") format("truetype");
+//}
+//@font-face {
+//  font-family: "Inter-Light";
+//  src: url("./public/font/Inter/Inter-Light.ttf") format("truetype");
+//}
+//@font-face {
+//  font-family: "Inter-SemiBold";
+//  src: url("./public/font/Inter/Inter-SemiBold.ttf") format("truetype");
+//}
 .navbar1{
   padding-bottom: 10px;
   border-bottom: 2px solid #E5EBF7;
@@ -7,10 +24,12 @@
   //width: 54px;
 }
 .logoText{
-  font-family: Roboto;
+  font-family:Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 24px;
+  color: #000714;
   line-height: 24px;
   margin-left: 10px;
 }
@@ -29,7 +48,7 @@ width: 50%;
   height: 20px;
 }
 .eri{
-  //font-family: Roboto;
+  font-family:Inter sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -53,7 +72,7 @@ width: 50%;
     color: black;
     margin-left: 15px;
     text-decoration: none;
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -66,11 +85,13 @@ width: 50%;
         height: 7px;
         margin-left: 5px;
       }
-      color: black;
-      font-family: Roboto;
+      font-family: Inter;
       font-style: normal;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 16px;
+      line-height: 24px;
+      color: #000714;
+
       border: 0;
       padding-left: 0;
       background-color: white;
@@ -99,7 +120,7 @@ width: 50%;
   }
   span{
     text-decoration: none;
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -117,7 +138,7 @@ width: 50%;
 }
 .footerLink{
   color: white;
-  font-family: Roboto;
+  font-family:Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -127,7 +148,7 @@ width: 50%;
 }
 .footerLink2{
   color: white;
-  font-family: Roboto;
+  font-family:Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -136,7 +157,7 @@ width: 50%;
 }
 .footerMenu{
   color: white;
-  font-family: Roboto;
+  font-family:Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -168,7 +189,7 @@ width: 50%;
 .section1{
 padding: 50px 0;
   p{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 23px;
@@ -176,7 +197,7 @@ padding: 50px 0;
     color: #000714;
   }
   span{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -194,7 +215,7 @@ padding: 50px 0;
   padding-bottom: 40px;
   p{
     margin-top: 150px;
-    //font-family: Roboto;
+    //font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -241,7 +262,7 @@ img{
      border-radius: 64px;
      padding: 40px 0;
   h2{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
@@ -249,7 +270,7 @@ img{
     margin-top: 40px;
   }
     p{margin-top: 15px;
-      font-family: Roboto;
+      //font-family:Inter;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
@@ -270,7 +291,7 @@ img{
        border-radius: 10px;
        display: flex;
        justify-content: space-between;
-       font-family: Roboto;
+       font-family:Inter;
        font-style: normal;
        font-weight: 500;
        font-size: 18px;
@@ -295,14 +316,19 @@ padding: 45px 0;
   border-radius: 8px;
   padding: 0 10px;
   h1{
-    font-family: Roboto;
+    //font-family:Inter;
+    //font-style: normal;
+    //font-weight: bold;
+    //font-size: 32px;
+    //line-height: 40px;
+    font-family: Inter;
     font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
   }
     span{
-      font-family: Roboto;
+      font-family:Inter;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -313,14 +339,14 @@ padding: 45px 0;
   .maqsadliAud{
     width: 100%;
     h1{
-      font-family: Roboto;
+      font-family:Inter;
       font-style: normal;
       font-weight: bold;
       font-size: 32px;
       line-height: 40px;
     }
     p{
-      font-family: Roboto;
+      font-family:Inter;
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
@@ -337,7 +363,7 @@ padding: 45px 0;
     height: 64px;
     span{
       position: absolute;
-      font-family: Roboto;
+      font-family:Inter;
       font-style: normal;
       font-weight: 600;
       font-size: 40px;
@@ -347,7 +373,7 @@ padding: 45px 0;
   }
 
     .cicrleText{
-      font-family: Roboto;
+      font-family:Inter;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -365,22 +391,22 @@ padding: 45px 0;
       .card-img-top{
         //border-radius: 32px 32px 0px 0px;
         img{
-          width: 262px;
-        }
+           width: 262px;
+         }
       }
       .card-body{
         background-color: #E5EBF7;
         //padding-bottom: 0px;
         height: 220px;
         h4{
-          //font-family: Roboto;
+          //font-family:Inter;
           font-style: normal;
           font-weight: bold;
           font-size: 18px;
           line-height: 24px;
         }
         p{
-          //font-family: Roboto;
+          //font-family:Inter;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -436,14 +462,14 @@ padding: 45px 0;
     height: 20px;
   }
   h4{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
   }
   span{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -451,7 +477,7 @@ padding: 45px 0;
     color: #424752;
   }
   a{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -462,7 +488,7 @@ padding: 45px 0;
 .youthunion{
   padding: 45px 0;
   p{
-    font-family: Roboto;
+    font-family:Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

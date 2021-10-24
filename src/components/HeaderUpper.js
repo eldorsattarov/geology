@@ -38,11 +38,11 @@ const HeaderUpper = () => {
                                 <img className="dropImg" src={dropdownOpen2===true ? "./images/arrow-up-icon-436.png" : "./images/Path.png"}/>
                             </DropdownToggle>
                             <DropdownMenu className="dropMenu">
-                                <DropdownItem className="dropItem"><Link to="/admin">Геологик ҳисоботларнинг тезислари</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Кадастр объэктларининг паспортлари</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Геологик маълумотлар тўпламини тақдим этиш</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни қабул қилиш (5-ГР шакли)</Link></DropdownItem>
-                                <DropdownItem className="dropItem"><Link to="/admin">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисобот олиш учун масъул мутахассисларнинг алоқалари (5-ГР шакли)</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/specialists">Геологик ҳисоботларнинг тезислари</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/reports">Кадастр объэктларининг паспортлари</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/cadastre">Геологик маълумотлар тўпламини тақдим этиш</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни қабул қилиш (5-ГР шакли)</Link></DropdownItem>
+                                <DropdownItem className="dropItem"><Link to="/">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисобот олиш учун масъул мутахассисларнинг алоқалари (5-ГР шакли)</Link></DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
                         <Link to="/">Корхона хариди</Link>
