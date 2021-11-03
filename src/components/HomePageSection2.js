@@ -10,7 +10,7 @@ const HomePageSection2 = () => {
                         <button type="button" className="btn">Батафсил малумот</button>
                     </div>
                     <div className="col-6">
-                        <img src="./images/pngwing 1 (1).png"/>
+                        <img src="./images/pngwing 1 (2).png"/>
                     </div>
                 </div>
             </div>

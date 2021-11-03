@@ -6,7 +6,11 @@ import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
 const Stafff = () => {
 
     const [open, setOpen] = useState(false);
-
+    const modalStyle = {
+        content:{
+           display : "none"
+        }
+    }
     const openModal = () => {
         setOpen(true)
     }
@@ -14,19 +18,7 @@ const Stafff = () => {
         <div>
             <Header/>
 
-            {/*        <div className={`modalOpen d-flex justify-content-center align-items-center ${open===false ? "d-none" : ""}`} onClick={()=>setOpen(!open)}>*/}
-
-            {/*            <div className="xodimForm">*/}
-            {/*<div className="container">*/}
-            {/*    <div className="row">*/}
-            {/*        salom*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
             <div className="staff">
-
-
                 <div className="container p-0">
                     <div className="row p-0 ">
                         <div className="col-12 mb-4"><h1>Ходимлар</h1></div>
@@ -86,9 +78,9 @@ const Stafff = () => {
                                 <div className="card-body">
                                     <h4>Мухитдинов Хикматулла<br/> Кудратович </h4>
                                     <p>
-                                        начальник Отдела инженерно<br/>
-                                        -технического и хозяйственного<br/>
-                                        обслуживания ГП <br/>«Госгеолинформцентр»<br/> Госкомгеологии
+                                        начальник Отдела инженерно
+                                        -технического и хозяйственного
+                                        обслуживания ГП «Госгеолинформцентр» Госкомгеологии
 
                                     </p>
                                 </div>
@@ -151,10 +143,10 @@ const Stafff = () => {
                                 <div className="card-body">
                                     <h4>Головко Елена Александровна</h4>
                                     <p>
-                                        Начальник отдела<br/>
-                                        производственно-технической,<br/>
-                                        информации ГП<br/>
-                                        «Госгеолинформцентр»<br/> Госкомгеологии<br/>
+                                        Начальник отдела
+                                        производственно-технической,
+                                        информации ГП
+                                        «Госгеолинформцентр» Госкомгеологии
                                         Республики Узбекистан
                                     </p>
                                 </div>
@@ -207,7 +199,9 @@ const Stafff = () => {
                         </div>
                     </div>
                 </div>
-                <Modal isOpen={open} toggle={() => setOpen(!open)}>
+
+
+                <Modal isOpen={open} toggle={() => setOpen(!open)} className="" style={modalStyle}>
                     {/*<ModalBody>*/}
                     <div className="xodimForm1">
                         <div className="container">
@@ -215,26 +209,26 @@ const Stafff = () => {
                                 <div className="d-flex">
                                     <img src="./images/Rectangle 21.png" className="ModalImgOne"/>
                                     <img src="./images/fi_x.png" className="ModalImgTwo" onClick={()=>setOpen(!open)}/>
-                                    <div className="row ml-3 mt-3">
-                                        <div className="col-12"><h4>Варисов Аълохон Аббасович </h4></div>
+                                    <div className="row ml-3">
+                                        <div className="col-12 mt-5"><h4>Варисов Аълохон Аббасович </h4></div>
                                         <div className="col-4">
                                             <span>Мутахассислиги:</span>
                                         </div>
-                                        <div className="col-8">
+                                        <div className="col-8 pl-0">
                                             <a>Директор ГП «Госгеолинформцентр» Госкомгеологии<br/> Республики
                                                 Узбекистан</a>
                                         </div>
                                         <div className="col-4">
                                             <span>Телефон : </span>
                                         </div>
-                                        <div className="col-8">
+                                        <div className="col-8 pl-0">
                                             <a>Cл. 71-256-07-02<br/>
                                                 Cот. 93-558-79-73</a>
                                         </div>
                                         <div className="col-4">
                                             <span>Электронная почта: </span>
                                         </div>
-                                        <div className="col-8">
+                                        <div className="col-8 pl-0">
                                             <a>varisovaloxon@gmail.com</a>
                                         </div>
                                     </div>

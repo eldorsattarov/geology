@@ -6,13 +6,14 @@ const ReceiptOfReports = () => {
     return (
         <div>
             <Header/>
-
             <div className="container my-5">
-                <p className="main_text">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни
-                    қабул қилиш (5-ГР шакли)
-                </p>
+               <div className="row">
+                   <p className="main_text">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни
+                       қабул қилиш (5-ГР шакли)
+                   </p>
+               </div>
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 pl-0">
                         <p className="assistant_text">
                             Ер қаъридан фойдаланувчиларнинг фойдали қазилмаларни қазиб олиш тўғрисидаги ҳисоботларини
                             тақдим

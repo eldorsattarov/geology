@@ -1,25 +1,22 @@
 .main_text {
-  font-family: Roboto, sans-serif;
-  font-size: 32px;
+  font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  line-height: 35px;
-  letter-spacing: 0;
-  text-align: left;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .assistant_text {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-family: Inter;
   font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0;
-  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #424752;
 }
 
 .qaror_text {
-  font-family: Roboto, sans-serif;
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +27,7 @@
 }
 
 .cadastr_text {
-  font-family: Roboto, sans-serif;
+  font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -38,6 +35,20 @@
   letter-spacing: 0;
   text-align: left;
   color: #000714;
+}
+
+.codastreLink {
+  background: #0166FF;
+  border-radius: 8px;
+  width: 316px;
+  height: 48px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 45px;
+}
+.codastreLink:hover {
+  color: white;
+  background-color: rgba(1, 102, 255, 0.93);
 }
 
 /*# sourceMappingURL=index.css.map */
