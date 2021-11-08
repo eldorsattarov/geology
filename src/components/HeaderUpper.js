@@ -44,8 +44,8 @@ const HeaderUpper = () => {
                                             <a href="#"><img src="./images/fi_x2.png" onClick={()=>setOpenLink(!openLink)}/></a>
                                         </div>
                                         <div className="col-12 links"><Link className="tabLink" to="/staff">Ходимлар</Link></div>
-                                        <div className="col-12 links"><Link className="tabLink" to="/enterprise2">Асосий тугалланган лойиҳалар</Link></div>
-                                        <div className="col-12 links"><Link className="tabLink" to="/">Саноат кўрсатмалар ва қоидалар</Link></div>
+                                        {/*<div className="col-12 links"><Link className="tabLink" to="/enterprise2">Асосий тугалланган лойиҳалар</Link></div>*/}
+                                        <div className="col-12 links"><Link className="tabLink" to="/enterprise2">Саноат кўрсатмалар ва қоидалар</Link></div>
                                         <div className="col-12 links"><Link className="tabLink" to="/laws">Вазирлар махкамасининг 546 сонли
                                             карорм</Link></div>
                                         <div className="col-12 links"><Link className="tabLink" to="/youthunion">Корхона Ёшлар Иттифоқи</Link>
@@ -74,7 +74,7 @@ const HeaderUpper = () => {
                             </div>
                         </div>
 
-                        <Link to="/" className="aLink">Корхона хариди</Link>
+                        <a href="https://exarid.uzex.uz" target="_blank" className="aLink">Корхона хариди</a>
 
                         <Link to="/aloqa" className="aLink">Алоқа</Link>
                     </div>

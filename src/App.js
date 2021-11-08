@@ -13,6 +13,8 @@ import HomePageSection5 from "./components/HomePageSection5";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import EnterpriseTwo from "./components/About/EnterpriseTwo";
+import CarouselPageOne from "./components/carousel/CarouselPageOne";
+import LoginEtp from "./Etp/LoginEtp";
 
 const App = () => {
     return (
@@ -29,6 +31,8 @@ const App = () => {
                 <Route path="/youthunion" exact component={YouthUnion}/>
                 <Route path="/laws" exact component={Laws}/>
 
+                <Route path="/carouselPageOne" exact component={CarouselPageOne}/>
+                <Route path="/loginEtp" exact component={LoginEtp}/>
                 /************         UMIDJON          ***************/
 
                 <Route path="/specialists" exact component={ReportingSpecialists}/>

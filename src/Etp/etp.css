@@ -1,0 +1,132 @@
+.loginEtp {
+  padding: 40px 0;
+}
+
+.etpPage {
+  padding: 50px 20px;
+  width: 75%;
+  height: 360px;
+  background: #E5EBF7;
+  box-shadow: 0px 4px 6px rgba(0, 7, 20, 0.15);
+}
+
+.etpTop span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.etpBottom {
+  margin-top: 30px;
+}
+.etpBottom .line {
+  border: 1px solid #7B808C;
+  height: 100%;
+  width: 2px;
+  margin: 0 50px;
+}
+.etpBottom p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.etpBottom span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.TabOpen1 {
+  width: 100%;
+  height: 192px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+.TabOpen1 .etp2 {
+  font-family: Inter;
+  font-size: 14px;
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.App {
+  padding: 20px 0;
+}
+.App .drop {
+  width: 470px;
+  height: 48px;
+  border-radius: 8px;
+}
+.App .dropToggle {
+  width: 470px;
+  height: 48px;
+  background: #E5EBF7;
+  color: black;
+  border: 0;
+  margin-top: 15px;
+}
+.App .dropToggle .toggleImg {
+  width: 12px;
+  height: 6px;
+}
+.App .dropToggle span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.App .dropToggle:hover {
+  background: #d8dce9;
+}
+.App .dropToggle:focus {
+  box-shadow: 0 0 0 0;
+}
+.App .dropMenu .dropItem b {
+  font-family: Inter;
+  font-size: 13px;
+}
+.App .dropMenu .dropItem .textB {
+  margin-left: 5px;
+}
+.App .dropMenu .dropItem span {
+  font-family: Inter;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.App .dropMenu .dropItem:focus {
+  background: #E5EBF7;
+}
+.App .signEtp {
+  width: 122px;
+  height: 40px;
+  margin-top: 30px;
+  background: #0166FF;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+  text-align: center;
+}
+.App .signEtp .openLock {
+  margin-right: 10px;
+  width: 22px;
+  height: 20px;
+}
+.App .signEtp .imzolash {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=etp.css.map */

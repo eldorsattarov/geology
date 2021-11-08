@@ -159,7 +159,7 @@
     top: -385px;
     width: 100%;
     background-color: white;
-    height: 300px;
+    height: 250px;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
 
     .links {
@@ -865,4 +865,58 @@
   display: none;
   background-color: white;
   overflow: hidden;
+}
+.carouselPageOne{
+  padding: 48px 0;
+  .col-8{
+    h2{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p{
+      margin-top: 25px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #424752;
+    }
+    img{
+      width: 736px;
+      height: 362px;
+      margin-top: 25px;
+    }
+  }
+  .col-4{
+    .card{
+      border-radius: 16px 16px 0px 0px;
+      border: 0;
+      .card-body{
+        background: #E5EBF7;
+      }
+    }
+    p{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000714;
+    }
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #424752;
+    }
+    img{
+      //height: 300px;
+    }
+  }
 }
