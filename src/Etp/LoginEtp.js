@@ -10,7 +10,7 @@ const LoginEtp = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const toggle = () => setDropdownOpen(prevState => !prevState);
-    /////////
+    ///////////
 
 
     const [isOpen, setOpen] = useState(false);
@@ -109,10 +109,11 @@ const LoginEtp = () => {
 
                                         <div className="d-flex justify-content-center">
                                             <div className="App">
-                                                <div toggle={() => setOpen(!isOpen)} className="d-flex align-items-center">
+                                                <div toggle={() => setOpen(!isOpen)}
+                                                     className="d-flex align-items-center">
                                                     <div className="d-flex align-items-center eimzo">
                                                         {/*<img src="../logo.png" className="openLock2"/>*/}
-                                                        <span className="etp2">Вход с помощью ЭЦП</span>
+                                                        <span className="etp2">ЭРИ орқали кириш</span>
                                                     </div>
                                                 </div>
                                                 <div className="group d-flex align-items-center Group">
@@ -123,7 +124,7 @@ const LoginEtp = () => {
                                                             className="dropToggle d-flex justify-content-between align-items-center">
                                     <span className="dropToggle2">
                                         {valuea !== "" ? valuea.inn + " - " + valuea.parsedAlias.cn.toUpperCase() :
-                                            (keys.length == 1 ? keys[0].inn + " - " + keys[0].parsedAlias.cn.toUpperCase() : "Выберите ключ")}
+                                            (keys.length == 1 ? keys[0].inn + " - " + keys[0].parsedAlias.cn.toUpperCase() : "Калитингизни танланг")}
                                     </span>
                                                             <img src="./images/down2.png" className="toggleImg"/>
                                                         </DropdownToggle>
@@ -135,7 +136,8 @@ const LoginEtp = () => {
                                                                     <div className="d-flex align-items-center">
                                                                         <img src="./images/etp.png"/>
                                                                         <b className="textB">№ СЕРТИФИКАТА:</b>
-                                                                        <span className="textB">{item.serialNumber}</span>
+                                                                        <span
+                                                                            className="textB">{item.serialNumber}</span>
                                                                     </div>
                                                                     <div className="d-flex align-items-center">
                                                                         <b>INN: </b>
@@ -163,13 +165,14 @@ const LoginEtp = () => {
                                                               onChange={e => setobj(e.target.value)}/>
                                                 </div>
                                                 {/*<div className="group">*/}
-                                                    <button className="d-flex justify-content-center align-items-center signEtp d-block ml-auto"
-                                                            onClick={sign}
-                                                            disabled={!selectedKey || !obj || valuea === ""}
-                                                    >
-                                                        <img src="./images/fi_log-in.png" className="openLock"/>
-                                                        <span className="imzolash">Кириш</span>
-                                                    </button>
+                                                <button
+                                                    className="d-flex justify-content-center align-items-center signEtp d-block ml-auto"
+                                                    onClick={sign}
+                                                    disabled={!selectedKey || !obj || valuea === ""}
+                                                >
+                                                    <img src="./images/fi_log-in.png" className="openLock"/>
+                                                    <span className="imzolash">Кириш</span>
+                                                </button>
                                                 {/*</div>*/}
 
                                                 {result !== "" && (

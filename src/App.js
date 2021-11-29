@@ -13,9 +13,18 @@ import HomePageSection5 from "./components/HomePageSection5";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import EnterpriseTwo from "./components/About/EnterpriseTwo";
-import CarouselPageOne from "./components/carousel/CarouselPageOne";
+import CarouselPageOne from "./components/carouselNews/CarouselPageOne";
 import LoginEtp from "./Etp/LoginEtp";
-
+import AllNews from "./components/carouselNews/AllNews";
+import KorxonaHaqida from "./Tadbirkor/KorxonaHaqida";
+import Accounting from "./components/Accounting/Accounting";
+import ArizaYuborish from "./Tadbirkor/ArizaYuborish";
+import MeningArizam from "./Tadbirkor/MeningArizam";
+import KonXaqida from "./Tadbirkor/KonXaqida";
+import InteraktivXarita from "./Tadbirkor/InteraktivXarita";
+import VebXarita from "./Tadbirkor/VebXarita";
+import MineralResources from "./components/MineralResources/MineralResources";
+import Index from "./components/MineralResources/Index";
 const App = () => {
     return (
         <BrowserRouter>
@@ -24,6 +33,7 @@ const App = () => {
             {/*}*/}
             <Switch>
 
+                {/*Korxona xaqida*/}
                 <Route path="/" exact component={Gealogiya}/>
                 <Route path="/enterprise1" exact component={Enterprise1}/>
                 <Route path="/enterprise2" exact component={EnterpriseTwo}/>
@@ -31,16 +41,36 @@ const App = () => {
                 <Route path="/youthunion" exact component={YouthUnion}/>
                 <Route path="/laws" exact component={Laws}/>
 
-                <Route path="/carouselPageOne" exact component={CarouselPageOne}/>
-                <Route path="/loginEtp" exact component={LoginEtp}/>
-                /************         UMIDJON          ***************/
+                {/*Interaktiv xizmat*/}
 
                 <Route path="/specialists" exact component={ReportingSpecialists}/>
                 <Route path="/reports" exact component={ReceiptOfReports}/>
                 <Route path="/cadastre" exact component={Cadastre}/>
 
-
+                {/*Bugalteriya xisobi*/}
+                <Route path="/accounting" exact component={Accounting}/>
+                    {/*contact us*/}
                 <Route path="/aloqa" exact component={HomePageSection5}/>
+
+                {/*Mineral resurslar bazasi*/}
+                {/*<Route path="/mineralResources" exact component={MineralResources}/>*/}
+                <Route path="/mineralResources" exact component={Index}/>
+
+                    {/*Carousel slider pages*/}
+                <Route path="/carouselPageOne" exact component={CarouselPageOne}/>
+                <Route path="/allNews" exact component={AllNews}/>
+
+                    {/*E - imzo pages*/}
+                <Route path="/loginEtp" exact component={LoginEtp}/>
+
+                    {/*Tadbirkor login e imzo*/}
+                <Route path="/tadbirkor/korxonaHaqida" exact component={KorxonaHaqida}/>
+                <Route path="/tadbirkor/ariza" exact component={ArizaYuborish}/>
+                <Route path="/tadbirkor/meningarizam" exact component={MeningArizam}/>
+                <Route path="/tadbirkor/konxaqida" exact component={KonXaqida}/>
+                <Route path="/tadbirkor/interaktivxarita" exact component={InteraktivXarita}/>
+                <Route path="/tadbirkor/vebxarita" exact component={VebXarita}/>
+
             </Switch>
 
             {/*{window.location.href.includes("/aloqa") ? "" : <Footer/>*/}

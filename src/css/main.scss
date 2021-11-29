@@ -15,6 +15,9 @@
 //  font-family: "Inter-SemiBold";
 //  src: url("./public/font/Inter/Inter-SemiBold.ttf") format("truetype");
 //}
+*{
+
+}
 .navbar1 {
   padding-bottom: 10px;
   border-bottom: 2px solid #E5EBF7;
@@ -36,7 +39,44 @@
 }
 
 .navbarTopRight {
-  width: 50%;
+  position: relative;
+  .imgFrom{
+    position: absolute; left: 0;
+    img{
+      width: 20px;
+      height: 20px;
+      //margin-right: 0;
+    }
+  }
+  .dNone{
+    display: none;
+  }
+  .avform{
+    //position: absolute;
+    width:58%;
+    //display: none;
+    left: 0;
+    margin-top: 15px;
+    box-shadow: 0 0 0 0;
+    .avform2{
+      border: 0;
+      width:270%;
+      box-shadow: 0 0 0 0;
+
+      &:focus{
+
+      }
+      placeholder{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+    }
+  }
+  width: 65%;
   justify-content: end;
 
   img {
@@ -49,6 +89,7 @@
 }
 
 .icons {
+  cursor: pointer;
   width: 20px;
   height: 20px;
 }
@@ -92,6 +133,7 @@
 }
 
 .navbarNavLeft {
+  //width: 40%;
   display: flex;
   align-items: center;
 
@@ -124,7 +166,7 @@
     color: black;
     font-weight: bold;
     background-color: white;
-
+   //position: relative;
     &:before {
       content: "";
       position: absolute;
@@ -155,6 +197,7 @@
     transition: all 0.3s linear;
     position: absolute;
     z-index: 1;
+    opacity: revert;
     left: 0;
     top: -385px;
     width: 100%;
@@ -231,8 +274,33 @@
     height: 248px;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
 
+    //.links {
+    //  padding: 8px 0;
+    //}
     .links {
+      position: relative;
       padding: 8px 0;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        //bottom: 0;
+        width: 4px;
+        //height: 0;
+        background-color: black;
+        transition: all 0.2s linear;
+        transform: scaleY(0);
+      }
+      &:hover{
+        .tabLink{
+          margin-left: 5px;
+        }
+        &:before{
+          height: 90%;
+          transform: scaleY(1);
+        }
+      }
     }
   }
 
@@ -426,6 +494,7 @@
 }
 
 .section3 {
+
   img {
     width: 100%;
   }
@@ -455,6 +524,16 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
+  }
+  .textBlue{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0166FF;
+    text-decoration: none;
+    //cursor: revert;
   }
  span{
    font-family: Inter;
@@ -563,6 +642,7 @@
     padding: 0 0;
 
     .card {
+      cursor: pointer;
       background-color: #E5EBF7;
       border: 1px solid #E5EBF7;
       box-sizing: border-box;
@@ -795,11 +875,12 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000714;
   }
   span{
-    margin-top: 16px;
+    //margin-top: px;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -812,10 +893,15 @@
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
+    color: #000714;
+  }
+  .textLaws{
+    //margin-bottom: 40px;
   }
   .lawsLink {
+    cursor: pointer;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -825,19 +911,107 @@
     background: #0166FF;
     border-radius: 8px;
     text-align: center;
-    margin-top: 20px;
-    a {
+    margin-top: 40px;
+  }
+  p {
+
+    text-decoration: none;
+   span{
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     text-decoration: none;
+     color: white;
+   }
+  }
+
+}
+.lawsModal {
+  position: relative;
+  //height: 200px;
+}
+.lawsModalBody{
+  .radioaf{
+    label{
+      margin-left: 10px;
+    }
+  }
+
+  padding: 40px 60px;
+  position:absolute;
+  width: 1028px;
+  height: 291px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  //background-color: red;
+  margin-top: 25%;
+  //bottom: 0;
+  left: -52%;
+
+  h4{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000714;
+  }
+  span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #424752;
+  }
+  .labelInput{
+    margin-top: 30px;
+    span{
       font-family: Inter;
       font-style: normal;
-      font-weight: 500;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+      color: #201918;
+      margin-left: 10px;
+    }
+  }
+  .yuklash{
+    width: 240px;
+    height: 48px;
+    background: #0166FF;
+    border-radius: 4px;
+    padding: 10px 60px;
+    text-decoration: none;
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
       font-size: 16px;
       line-height: 24px;
-      text-decoration: none;
       color: white;
     }
   }
+  .yuklash1{
+    margin-right: 20px;
+    text-decoration: none;
+    width: 240px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 10px 60px;
+    border: 1px solid #201918;
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #201918;
+    }
+  }
 }
-
 
 
 
@@ -856,67 +1030,48 @@
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active, .accordion:hover{
   background-color: #ccc;
 }
 
-.panel {
+.panel{
   padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
 }
-.carouselPageOne{
+
+
+.accounting{
   padding: 48px 0;
-  .col-8{
-    h2{
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 32px;
-    }
-    p{
-      margin-top: 25px;
-      font-family: Inter;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: #424752;
-    }
-    img{
-      width: 736px;
-      height: 362px;
-      margin-top: 25px;
-    }
+  .accountingName{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000714;
   }
-  .col-4{
-    .card{
-      border-radius: 16px 16px 0px 0px;
-      border: 0;
-      .card-body{
-        background: #E5EBF7;
-      }
-    }
-    p{
-      font-family: Inter;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
-      color: #000714;
-    }
+  .accountingSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 16px;
+    margin-top: 16px;
+    background: #E5EBF7;
+    border: 1px solid #E5EBF7;
+    box-sizing: border-box;
+    border-radius: 8px;
     span{
       font-family: Inter;
       font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      color: #424752;
-    }
-    img{
-      //height: 300px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: #000714;
     }
   }
 }
+
+

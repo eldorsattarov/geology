@@ -1,0 +1,142 @@
+.carouselPageOne{
+  padding: 48px 0;
+  .col-8{
+    h2{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p{
+      margin-top: 25px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #424752;
+    }
+    img{
+      width: 736px;
+      height: 362px;
+      margin-top: 25px;
+    }
+  }
+  .col-4{
+    h2{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 10px;
+    }
+    .card{
+      border-radius: 16px 16px 0px 0px;
+      border: 0;
+      .card-body{
+        background: #E5EBF7;
+      }
+    }
+    p{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000714;
+    }
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #424752;
+    }
+    img{
+      //height: 300px;
+    }
+
+    .carouselDivLink{
+      margin-top: 24px;
+      .carouselAllLink{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3A4686;
+        text-decoration: none;
+        img{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+.allNews{
+  padding-top: 40px;
+  padding-bottom: 50px;
+  .col-4{
+    h2{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 10px;
+    }
+    .card{
+      border-radius: 16px 16px 0px 0px;
+      border: 0;
+      .card-body{
+        background: #E5EBF7;
+        height: 130px;
+      }
+      .card-footer{
+        background: #E5EBF7;
+        border: 0;
+        span{
+          padding-bottom: 10px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: #424752;
+          margin-bottom: 0;
+        }
+      }
+    }
+    p{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000714;
+    }
+
+    img{
+      //height: 300px;
+    }
+
+    .carouselDivLink{
+      margin-top: 24px;
+      .carouselAllLink{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3A4686;
+        text-decoration: none;
+        img{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

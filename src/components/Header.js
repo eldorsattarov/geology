@@ -1,21 +1,21 @@
 import React, {useState} from 'react';
 import HeaderUpper from "./HeaderUpper";
-
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-
-
+import {AvForm, AvField} from "availity-reactstrap-validation";
 import {Link} from "react-router-dom";
+import {wrapMapToPropsConstant} from "react-redux/lib/connect/wrapMapToProps";
 
 const Header = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-    const toggle = () => setDropdownOpen(prevState => !prevState);
+    const [open, setOpen] = useState(false);
+    const [clear , setClear] = useState('')
 
-    // select template
-
+    const openInput = () => {
+        setOpen(!open);
+        if (open===false) setClear("")
+    }
+    const clearInput = (e) => {
+      open===false ? setClear("") : setClear(e.target.value);
+      console.log(clear)
+    }
 
 
     return (
@@ -32,9 +32,23 @@ const Header = () => {
                             </div>
                         </Link>
                         <div className="navbarTopRight d-flex align-items-center">
-                            <img src="./images/fi_search.png" className="icons"/>
+                            <div className="d-flex align-items-center imgFrom">
+                                <img src="./images/fi_search2.png"
+                                     className={`${open === false ? "dNone" : ""}`}/>
+                                <AvForm className={`avform ${open === false ? "dNone" : ""}`}>
+                                    <AvField type="text" name="search" className="avform2" placeholder="Qidiruv"
+                                             value={clear}
+                                             onChange={e => clearInput(e)}
+                                             // onClick={()=>clearInput}
+                                    />
+                                </AvForm>
+                            </div>
+                            <img src={`${open === false ? "./images/fi_search.png" : "./images/fi_x2.png"}`}
+                                 className="icons" onClick={() => openInput()}/>
+
                             <img src="./images/fi_eye.png" className="icons"/>
-                            <Link to="/loginEtp" className="text-decoration-none">
+                            {/*<Link to="/loginEtp" className="text-decoration-none">*/}
+                            <Link to="/tadbirkor/korxonaHaqida" className="text-decoration-none">
                                 <span className="eri">ЭРИ орқали кириш</span>
                             </Link>
 
@@ -42,8 +56,6 @@ const Header = () => {
                                 <option>Ўзбекча</option>
                                 <option>Русский</option>
                             </select>
-
-
 
 
                         </div>

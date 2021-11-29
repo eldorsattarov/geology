@@ -1,5 +1,7 @@
 import React from 'react';
-// import Slider from "react-slick";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HomePageSection3 = () => {
 
@@ -12,23 +14,65 @@ const HomePageSection3 = () => {
     };
 
     return (
-        <div className="section3">
-            <img src="./images/Rectangle 4.png" className="w-100"/>
-            <img src="./images/Rectangle 50.png" className="img2"/>
-            <div className="container">
-                <div className="row">
-                    <div className="section3Left">
-                        <p>"Уранкамёбметгеология" АЖ марказий каротаж<br/>
-                            отряди <>геофизика тадқиқот</> ишларини ўтказмоқда.
-                        </p>
-                        <span>Айни дамда геофизика тадқиқоти натижавиймаълумотлари буюртмачи<br/>
+        <div>
+            <Slider {...settings} className="">
+
+                <div className="section3">
+                    <img src="./images/Rectangle 4.png" className="w-100"/>
+                    <img src="./images/Rectangle 50.png" className="img2"/>
+                    <div className="container">
+                        <div className="row">
+                            <div className="section3Left">
+                                <p>"Уранкамёбметгеология" АЖ марказий каротаж<br/>
+                                    отряди <a className="textBlue">геофизика тадқиқот</a> ишларини ўтказмоқда.
+                                </p>
+                                <span>Айни дамда геофизика тадқиқоти натижавиймаълумотлари буюртмачи<br/>
                         бўлмиш "Қизилқум дала қидирув экспедиция"си мутахассисларига<br/>
                         тақдим
                         этилган.
                         </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div className="section3">
+                    <img src="./images/Rectangle 4.png" className="w-100"/>
+                    <img src="./images/Rectangle 50.png" className="img2"/>
+                    <div className="container">
+                        <div className="row">
+                            <div className="section3Left">
+                                <p>"Уранкамёбметгеология" АЖ марказий каротаж<br/>
+                                    отряди <a className="textBlue">геофизика тадқиқот</a> ишларини ўтказмоқда.
+                                </p>
+                                <span>Айни дамда геофизика тадқиқоти натижавиймаълумотлари буюртмачи<br/>
+                        бўлмиш "Қизилқум дала қидирув экспедиция"си мутахассисларига<br/>
+                        тақдим
+                        этилган.
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section3">
+                    <img src="./images/Rectangle 4.png" className="w-100"/>
+                    <img src="./images/Rectangle 50.png" className="img2"/>
+                    <div className="container">
+                        <div className="row">
+                            <div className="section3Left">
+                                <p>"Уранкамёбметгеология" АЖ марказий каротаж<br/>
+                                    отряди <a className="textBlue">геофизика тадқиқот</a> ишларини ўтказмоқда.
+                                </p>
+                                <span>Айни дамда геофизика тадқиқоти натижавиймаълумотлари буюртмачи<br/>
+                        бўлмиш "Қизилқум дала қидирув экспедиция"си мутахассисларига<br/>
+                        тақдим
+                        этилган.
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </Slider>
         </div>
     );
 };

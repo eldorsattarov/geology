@@ -25,7 +25,7 @@ const Enterprise1 = () => {
                         <div className="">
                             <DropdownItem2 theme="white">
                                 <div className="col-12">
-                                    <div className="card">
+                                    <div className="card" onClick={() => onDropdownClicked()}>
                                         <div className="card-body">
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <h1>Корхонасининг асосий мақсади</h1>
@@ -52,7 +52,7 @@ const Enterprise1 = () => {
                         <div className="mt-5">
                             <DropdownItem2 theme="white">
                                 <div className="col-12">
-                                    <div className="card">
+                                    <div className="card" onClick={() => onDropdownClicked2()}>
                                         <div className="card-body">
                                             {/*<div className="col-12">*/}
                                                 <div className="d-flex justify-content-between align-items-center">

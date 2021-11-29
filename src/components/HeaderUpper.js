@@ -45,7 +45,7 @@ const HeaderUpper = () => {
                                         </div>
                                         <div className="col-12 links"><Link className="tabLink" to="/staff">Ходимлар</Link></div>
                                         {/*<div className="col-12 links"><Link className="tabLink" to="/enterprise2">Асосий тугалланган лойиҳалар</Link></div>*/}
-                                        <div className="col-12 links"><Link className="tabLink" to="/enterprise2">Саноат кўрсатмалар ва қоидалар</Link></div>
+                                        {/*<div className="col-12 links"><Link className="tabLink" to="/enterprise2">Саноат кўрсатмалар ва қоидалар</Link></div>*/}
                                         <div className="col-12 links"><Link className="tabLink" to="/laws">Вазирлар махкамасининг 546 сонли
                                             карорм</Link></div>
                                         <div className="col-12 links"><Link className="tabLink" to="/youthunion">Корхона Ёшлар Иттифоқи</Link>
@@ -62,19 +62,21 @@ const HeaderUpper = () => {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-12 links d-flex justify-content-between align-items-center">
-                                            <Link to="/">Геологик ҳисоботларнинг тезислари</Link>
+                                            {/*<Link to="/" className="tabLink">Геологик ҳисоботларнинг тезислари</Link>*/}
+                                            <div className="col-12 links"><Link to="/reports" className="tabLink">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни қабул қилиш (5-ГР шакли)</Link></div>
+
                                             <a href="#"><img src="./images/fi_x2.png" onClick={()=>setOpenLink2(!openLink2)}/></a>
                                         </div>
-                                        <div className="col-12 links"><Link to="/cadastre">Кадастр объэктларининг паспортлари</Link></div>
-                                        <div className="col-12 links"><Link to="/">Геологик маълумотлар тўпламини тақдим этиш</Link></div>
-                                        <div className="col-12 links"><Link to="/reports">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни қабул қилиш (5-ГР шакли)</Link></div>
-                                        <div className="col-12 links"><Link to="/specialists">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисобот олиш учун масъул мутахассисларнинг алоқалари (5-ГР шакли)</Link></div>
+                                        {/*<div className="col-12 links"><Link to="/cadastre">Кадастр объэктларининг паспортлари</Link></div>*/}
+                                        {/*<div className="col-12 links"><Link to="/">Геологик маълумотлар тўпламини тақдим этиш</Link></div>*/}
+                                        <div className="col-12 links"><Link to="/specialists" className="tabLink">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисобот олиш учун масъул мутахассисларнинг алоқалари (5-ГР шакли)</Link></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="https://exarid.uzex.uz" target="_blank" className="aLink">Корхона хариди</a>
+                        {/*<a href="https://exarid.uzex.uz" target="_blank" className="aLink">Буғалтерия ҳисоботи</a>*/}
+                        <Link to="/accounting" className="aLink">Буғалтерия ҳисоботи</Link>
 
                         <Link to="/aloqa" className="aLink">Алоқа</Link>
                     </div>

@@ -54,3 +54,78 @@
     background-color: rgba(1, 102, 255, 0.93);
   }
 }
+
+//mineral resurslar bazasi
+
+.mineralResources1{
+  Label{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #424752;
+  }
+ .avfieldMineral{
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000714;
+    background-color: #E5EBF7;
+  }
+  padding-top: 35px;
+  padding-bottom: 25px;
+  background-color: #E5EBF7;
+  .col-12{
+    button{
+      img{
+        color: black;
+      }
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      width: 141px;
+      height: 48px;
+      background: #0166FF;
+      border-radius: 4px;
+      border: 0;
+      span{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        //padding-right: 5px;
+      }
+    }
+  }
+}
+.mineralResourcesScroll{
+  overflow-x: auto;
+  min-height: 100px;
+  height: 500px;
+  overflow-y: scroll;
+ margin-top: 10px;
+}
+.asd{
+  border: 1px solid #E5EBF7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 20px;
+}
+.paginationIndex{
+padding: 20px 0;
+}
+.tablePagination{
+th{
+  width: 60px;
+}
+}
+

@@ -14,8 +14,38 @@
 }
 
 .navbarTopRight {
-  width: 50%;
+  position: relative;
+  width: 65%;
   justify-content: end;
+}
+.navbarTopRight .imgFrom {
+  position: absolute;
+  left: 0;
+}
+.navbarTopRight .imgFrom img {
+  width: 20px;
+  height: 20px;
+}
+.navbarTopRight .dNone {
+  display: none;
+}
+.navbarTopRight .avform {
+  width: 58%;
+  left: 0;
+  margin-top: 15px;
+  box-shadow: 0 0 0 0;
+}
+.navbarTopRight .avform .avform2 {
+  border: 0;
+  width: 270%;
+  box-shadow: 0 0 0 0;
+}
+.navbarTopRight .avform .avform2 placeholder {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 .navbarTopRight img {
   margin-right: 18px;
@@ -25,6 +55,7 @@
 }
 
 .icons {
+  cursor: pointer;
   width: 20px;
   height: 20px;
 }
@@ -115,6 +146,7 @@
   transition: all 0.3s linear;
   position: absolute;
   z-index: 1;
+  opacity: revert;
   left: 0;
   top: -385px;
   width: 100%;
@@ -178,7 +210,25 @@
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
 }
 .navbarNavLeft .korxonaLink2 .links {
+  position: relative;
   padding: 8px 0;
+}
+.navbarNavLeft .korxonaLink2 .links:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 4px;
+  background-color: black;
+  transition: all 0.2s linear;
+  transform: scaleY(0);
+}
+.navbarNavLeft .korxonaLink2 .links:hover .tabLink {
+  margin-left: 5px;
+}
+.navbarNavLeft .korxonaLink2 .links:hover:before {
+  height: 90%;
+  transform: scaleY(1);
 }
 
 .navbarNavRight img {
@@ -369,6 +419,15 @@
   font-size: 24px;
   line-height: 32px;
 }
+.section3Left .textBlue {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0166FF;
+  text-decoration: none;
+}
 .section3Left span {
   font-family: Inter;
   font-style: normal;
@@ -465,6 +524,7 @@
   padding: 0 0;
 }
 .enterpriseOne .col-12 .card {
+  cursor: pointer;
   background-color: #E5EBF7;
   border: 1px solid #E5EBF7;
   box-sizing: border-box;
@@ -674,11 +734,11 @@
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #000714;
 }
 .laws span {
-  margin-top: 16px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -691,10 +751,12 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
+  color: #000714;
 }
 .laws .lawsLink {
+  cursor: pointer;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -704,9 +766,12 @@
   background: #0166FF;
   border-radius: 8px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
-.laws .lawsLink a {
+.laws p {
+  text-decoration: none;
+}
+.laws p span {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -714,6 +779,85 @@
   line-height: 24px;
   text-decoration: none;
   color: white;
+}
+
+.lawsModal {
+  position: relative;
+}
+
+.lawsModalBody {
+  padding: 40px 60px;
+  position: absolute;
+  width: 1028px;
+  height: 291px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  margin-top: 25%;
+  left: -52%;
+}
+.lawsModalBody .radioaf label {
+  margin-left: 10px;
+}
+.lawsModalBody h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  color: #000714;
+}
+.lawsModalBody span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #424752;
+}
+.lawsModalBody .labelInput {
+  margin-top: 30px;
+}
+.lawsModalBody .labelInput span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #201918;
+  margin-left: 10px;
+}
+.lawsModalBody .yuklash {
+  width: 240px;
+  height: 48px;
+  background: #0166FF;
+  border-radius: 4px;
+  padding: 10px 60px;
+  text-decoration: none;
+}
+.lawsModalBody .yuklash span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.lawsModalBody .yuklash1 {
+  margin-right: 20px;
+  text-decoration: none;
+  width: 240px;
+  height: 48px;
+  border-radius: 4px;
+  padding: 10px 60px;
+  border: 1px solid #201918;
+}
+.lawsModalBody .yuklash1 span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #201918;
 }
 
 .accordion {
@@ -740,52 +884,36 @@
   overflow: hidden;
 }
 
-.carouselPageOne {
+.accounting {
   padding: 48px 0;
 }
-.carouselPageOne .col-8 h2 {
+.accounting .accountingName {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-.carouselPageOne .col-8 p {
-  margin-top: 25px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #424752;
-}
-.carouselPageOne .col-8 img {
-  width: 736px;
-  height: 362px;
-  margin-top: 25px;
-}
-.carouselPageOne .col-4 .card {
-  border-radius: 16px 16px 0px 0px;
-  border: 0;
-}
-.carouselPageOne .col-4 .card .card-body {
-  background: #E5EBF7;
-}
-.carouselPageOne .col-4 p {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 36px;
+  line-height: 48px;
   color: #000714;
 }
-.carouselPageOne .col-4 span {
+.accounting .accountingSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px;
+  margin-top: 16px;
+  background: #E5EBF7;
+  border: 1px solid #E5EBF7;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.accounting .accountingSection span {
   font-family: Inter;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #424752;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000714;
 }
 
 /*# sourceMappingURL=main.css.map */
