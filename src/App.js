@@ -25,6 +25,8 @@ import InteraktivXarita from "./Tadbirkor/InteraktivXarita";
 import VebXarita from "./Tadbirkor/VebXarita";
 import MineralResources from "./components/MineralResources/MineralResources";
 import Index from "./components/MineralResources/Index";
+import Login from "./pages/Login";
+
 const App = () => {
     return (
         <BrowserRouter>
@@ -32,7 +34,7 @@ const App = () => {
             {/*    <Header/>*/}
             {/*}*/}
             <Switch>
-
+                <Route path="/login" exact component={Login}/>
                 {/*Korxona xaqida*/}
                 <Route path="/" exact component={Gealogiya}/>
                 <Route path="/enterprise1" exact component={Enterprise1}/>
@@ -49,21 +51,21 @@ const App = () => {
 
                 {/*Bugalteriya xisobi*/}
                 <Route path="/accounting" exact component={Accounting}/>
-                    {/*contact us*/}
+                {/*contact us*/}
                 <Route path="/aloqa" exact component={HomePageSection5}/>
 
                 {/*Mineral resurslar bazasi*/}
                 {/*<Route path="/mineralResources" exact component={MineralResources}/>*/}
                 <Route path="/mineralResources" exact component={Index}/>
 
-                    {/*Carousel slider pages*/}
+                {/*Carousel slider pages*/}
                 <Route path="/carouselPageOne" exact component={CarouselPageOne}/>
                 <Route path="/allNews" exact component={AllNews}/>
 
-                    {/*E - imzo pages*/}
+                {/*E - imzo pages*/}
                 <Route path="/loginEtp" exact component={LoginEtp}/>
 
-                    {/*Tadbirkor login e imzo*/}
+                {/*Tadbirkor login e imzo*/}
                 <Route path="/tadbirkor/korxonaHaqida" exact component={KorxonaHaqida}/>
                 <Route path="/tadbirkor/ariza" exact component={ArizaYuborish}/>
                 <Route path="/tadbirkor/meningarizam" exact component={MeningArizam}/>

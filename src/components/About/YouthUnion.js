@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
+import axios from "axios";
+import {API_PATH} from "../../tools/constants";
 
 const YouthUnion = () => {
+    const [youthUnion , setyouthUnion] = useState([]);
+
+    useEffect(()=>{
+        axios.get(API_PATH + "Yoshlar-ittifoqi/")
+            .then((res)=>{
+                console.log(res)
+                setyouthUnion(res.data.results)
+            })
+    },[]);
+
     return (
         <div>
             <Header/>
@@ -12,6 +24,13 @@ const YouthUnion = () => {
                         <div className="col-12 pl-0 mb-4">
                             <h2>Корхона ёшлар иттифоқи</h2>
                         </div>
+                        {youthUnion.map((item,index)=>{
+                            return(
+                                <div className="col-6">
+                                    <p>{item.text}</p>
+                                </div>
+                            )
+                        })}
                         <div className="col-6 pl-0">
                             <p>
                                 Ўзбекистон Республикаси Давлат геология ва минерал ресурслар қўмитаси тизимида ёшларга

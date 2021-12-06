@@ -26,10 +26,8 @@ class Pagination extends Component {
 
     loadData = (page) => {
         console.log('page>>', page)
-        axios
-            .get(`https://reqres.in/api/users?page=` + page)
+        axios.get(`https://reqres.in/api/users?page=` + page)
             .then(res => {
-
                 const data = res.data;
                 console.log('data>>>>', data)
                 this.setState({
@@ -42,6 +40,8 @@ class Pagination extends Component {
     getPaginatedData = page => {
         this.loadData(page);
     }
+
+
     handleChange = (event) => {
         this.setState({age: event.target.value})
         // setAge(event.target.value);

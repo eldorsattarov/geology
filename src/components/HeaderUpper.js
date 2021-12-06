@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 
 // import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem2 } from 'reactstrap';
-const HeaderUpper = () => {
-
+const HeaderUpper = (props) => {
 
     useEffect(() => {
 
@@ -25,7 +24,6 @@ const HeaderUpper = () => {
     const linkOpen2 = () => {
         setOpenLink2(!openLink2);
     }
-
 
     return (
         <div className="navbarNav mb-1">

@@ -91,6 +91,13 @@
     .card{
       border-radius: 16px 16px 0px 0px;
       border: 0;
+      .card-img-top{
+        img{
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
+          height: 250px;
+        }
+      }
       .card-body{
         background: #E5EBF7;
         height: 130px;
