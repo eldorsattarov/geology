@@ -170,6 +170,7 @@
       font-size: 28px;
       line-height: 32px;
       color: #000714;
+
     }
   }
 }
@@ -185,6 +186,87 @@
       font-size: 28px;
       line-height: 32px;
       color: #000714;
+    }
+  }
+  .meningArizambottom{
+    position: relative;
+    //padding: 20px 0;
+    margin:20px 0;
+    .nextPage{
+      position: absolute;
+      background: #FFFFFF;
+      //border: 1px solid #949494;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      top: 40%;
+      box-shadow: 0 0 5px 0 #949494;
+    }
+    .card{
+      padding: 0 15px;
+    }
+    h1{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #201918;
+    }
+    p{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #424752;
+      padding-bottom: 8px;
+    }
+    span{
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #201918;
+    }
+    .linebottom{
+      position: static;
+      width: 90%;
+      height: 0px;
+      left: 0px;
+      top: 92px;
+      border: 1px solid #E5EBF7;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 16px 0px;
+    }
+    .arizaFayl{
+      position: static;
+      width: 286px;
+      height: 48px;
+      border: 1px solid #E9EAF0;
+      box-sizing: border-box;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      margin-top: 15px;
+      span{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #949494;
+      }
     }
   }
 }
@@ -349,4 +431,118 @@
     margin-bottom: 50px;
   }
 }
+.arizam{
+  .nextPage{
+    background: #FFFFFF;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 0 #949494;
+    margin-bottom: 15px;
+  }
+  .arizaYuborish {
+    .arizaYuborishMenu {
+      .arizaYuborishMenuLeft {
+        span {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #424752;
+        }
 
+        .avfield {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #201918;
+          background: #E5EBF7;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+
+      .arizaYuborishMeneRight {
+        span {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #424752;
+        }
+
+        .arizaYuborishMeneRight1 {
+          div {
+            width: 39px;
+            height: 39px;
+            background: #E5EBF7;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #201918;
+          }
+        }
+      }
+
+      button {
+        width: 104px;
+        height: 40px;
+        margin-top: 7px;
+        background: #EB5757;
+        border-radius: 8px;
+        border: 0;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #FFFFFF;
+        display: block;
+        margin-left: auto;
+      }
+      .buttonPrimary{
+        width: 104px;
+        height: 40px;
+        margin-top: 7px;
+        background: #0166FF;
+        border-radius: 8px;
+        border: 0;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #FFFFFF;
+        display: block;
+        margin-left: auto;
+      }
+    }
+    .buttonPrimary2{
+      width: 228px;
+      height: 40px;
+      background: #0166FF;
+      border-radius: 8px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      color: #FFFFFF;
+      display: block;
+      margin-left: auto;
+      border: 0;
+      margin-bottom: 50px;
+    }
+  }
+}

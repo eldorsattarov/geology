@@ -26,6 +26,7 @@ import VebXarita from "./Tadbirkor/VebXarita";
 import MineralResources from "./components/MineralResources/MineralResources";
 import Index from "./components/MineralResources/Index";
 import Login from "./pages/Login";
+import Arizam from "./Tadbirkor/Arizam";
 
 const App = () => {
     return (
@@ -69,6 +70,7 @@ const App = () => {
                 <Route path="/tadbirkor/korxonaHaqida" exact component={KorxonaHaqida}/>
                 <Route path="/tadbirkor/ariza" exact component={ArizaYuborish}/>
                 <Route path="/tadbirkor/meningarizam" exact component={MeningArizam}/>
+                <Route path="/tadbirkor/arizam" exact component={Arizam}/>
                 <Route path="/tadbirkor/konxaqida" exact component={KonXaqida}/>
                 <Route path="/tadbirkor/interaktivxarita" exact component={InteraktivXarita}/>
                 <Route path="/tadbirkor/vebxarita" exact component={VebXarita}/>

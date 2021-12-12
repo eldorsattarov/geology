@@ -7,7 +7,8 @@ const TadbirkorLayout = (props) => {
         <div className="admin-layout">
             <div className="admin-layout-left">
                 <div className="user-info d-flex justify-content-center align-items-center">
-                        <img src="../images/logotad.png" alt=""/>
+                        {/*<img src="../images/logotad.png" alt=""/>*/}
+                        <img src="../images/logoN1.png" alt=""/>
                 </div>
                 <div className="menu">
                     <ul className="nav flex-column">
@@ -45,7 +46,9 @@ const TadbirkorLayout = (props) => {
                                                 props.history.location.pathname === "/tadbirkor/meningarizam" ? "Менинг аризаларим" :(
                                                     props.history.location.pathname === "/tadbirkor/konxaqida" ? "Кон ҳақида маълумотлар" :(
                                                         props.history.location.pathname === "/tadbirkor/interaktivxarita"?"Интерактив харита":(
-                                                            props.history.location.pathname === "/tadbirkor/vebxarita"?"Веб-харита" : ""
+                                                            props.history.location.pathname === "/tadbirkor/vebxarita" ? "Веб-харита" : (
+                                                                props.history.location.pathname === "/tadbirkor/arizam" ? "Aризам" : ""
+                                                            )
                                                         )
                                                     )
                                                 )

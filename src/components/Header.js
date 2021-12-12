@@ -25,7 +25,7 @@ const Header = () => {
                     <div className="navbar1 d-flex justify-content-between align-items-center mt-1 w-100">
                         <Link to="/" className="text-decoration-none">
                             <div className="navbarTopLeft d-flex align-items-center">
-                                <img src="./images/logo 1.png" className="logo"/>
+                                <img src="./images/logoN1.png" className="logo"/>
                                 <span className="logoText">
                                 Геология ахборот маркази <br/>Давлат корхонаси
                             </span>

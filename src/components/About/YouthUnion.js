@@ -26,7 +26,7 @@ const YouthUnion = (props) => {
                         </div>
                         {youthUnion.map((item,index)=>{
                             return(
-                                <div className="col-6" key={item.id}>
+                                <div className="col-6 pl-0" key={item.id}>
                                     <p>{item.text}</p>
                                 </div>
                             )
