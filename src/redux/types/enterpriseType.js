@@ -1,0 +1,2 @@
+
+export const ENTERPRISE = "ENTERPRISE/ENTERPRISE";

@@ -52,10 +52,13 @@ const Header = () => {
                                 <span className="eri">ЭРИ орқали кириш</span>
                             </Link>
 
-                            <select className="border-0">
-                                <option>Ўзбекча</option>
-                                <option>Русский</option>
-                            </select>
+                            <div className="d-flex align-items-center languageSelect">
+                                <img src="./images/fi_globe2.png"/>
+                                <select>
+                                    <option>Ўзбекча</option>
+                                    <option>Русский</option>
+                                </select>
+                            </div>
 
 
                         </div>

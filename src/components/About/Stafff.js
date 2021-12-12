@@ -1,11 +1,26 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
+import axios from "axios";
+import {API_PATH} from "../../tools/constants";
+import {connect} from "react-redux";
+import {getStaf} from "../../redux/actions/stafAction";
 
-const Stafff = () => {
+const Stafff = (props) => {
 
+    const [staf , setStaf] = useState([])
     const [open, setOpen] = useState(false);
+
+    useEffect(()=>{
+        props.getStaf();
+        // axios.get(API_PATH + "Xodimlar/")
+        //     .then((res)=>{
+        //         console.log(res);
+        //         setStaf(res.data.results);
+        //     })
+    },[])
+
     const modalStyle = {
         content:{
            display : "none"
@@ -22,181 +37,203 @@ const Stafff = () => {
                 <div className="container p-0">
                     <div className="row p-0 ">
                         <div className="col-12 mb-4"><h1>Ходимлар</h1></div>
-                        <div className="col-3 " onClick={() => openModal()}>
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 21.png"/>
+                        {props.staf.map((item,index)=>{
+                            return(
+                                <div className="col-3 " onClick={() => openModal()} key={item.id}>
+                                    <div className="card">
+                                        <div className="card-img-top">
+                                            {/*{item.img}*/}
+                                            <img src={item.img}/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h4>{item.full_name}</h4>
+                                            {/*<h4>Варисов Аълохон<br/>Аббасович </h4>*/}
+                                              <p>
+                                                {item.info}
+                                                {/*Директор ГП «Госгеолинформцентр»<br/>*/}
+                                                {/*Госкомгеологии Республики<br/>*/}
+                                                {/*Узбекистан*/}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="card-body">
-                                    <h4>Варисов Аълохон<br/>
-                                        Аббасович </h4>
-                                    <p>
-                                        Директор ГП «Госгеолинформцентр»<br/>
-                                        Госкомгеологии Республики<br/>
-                                        Узбекистан
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3 ">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 20.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Талъатхўжаев Дониёр<br/> Шухратович </h4>
-                                    <p>
-                                        Зам.директора по инвестиц. ГП <br/>
-                                        «Госгеолинформцентр»<br/>
-                                        Госкомгеологии Республики<br/>
-                                        Узбекистан
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3 ">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 19.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Хакбердиев Нурбек <br/>Мусурманович </h4>
-                                    <p>
-                                        Зам.директора ГП <br/>
-                                        «Госгеолинформцентр»<br/>
-                                        Госкомгеологии Республики<br/>
-                                        Узбекистан
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 18.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Мухитдинов Хикматулла<br/> Кудратович </h4>
-                                    <p>
-                                        начальник Отдела инженерно
-                                        -технического и хозяйственного
-                                        обслуживания ГП «Госгеолинформцентр» Госкомгеологии
+                            )
+                        })}
+                        {/*<div className="col-3 " onClick={() => openModal()}>*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 21.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Варисов Аълохон<br/>*/}
+                        {/*                Аббасович </h4>*/}
+                        {/*            <p>*/}
+                        {/*                Директор ГП «Госгеолинформцентр»<br/>*/}
+                        {/*                Госкомгеологии Республики<br/>*/}
+                        {/*                Узбекистан*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3 ">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 20.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Талъатхўжаев Дониёр<br/> Шухратович </h4>*/}
+                        {/*            <p>*/}
+                        {/*                Зам.директора по инвестиц. ГП <br/>*/}
+                        {/*                «Госгеолинформцентр»<br/>*/}
+                        {/*                Госкомгеологии Республики<br/>*/}
+                        {/*                Узбекистан*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3 ">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 19.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Хакбердиев Нурбек <br/>Мусурманович </h4>*/}
+                        {/*            <p>*/}
+                        {/*                Зам.директора ГП <br/>*/}
+                        {/*                «Госгеолинформцентр»<br/>*/}
+                        {/*                Госкомгеологии Республики<br/>*/}
+                        {/*                Узбекистан*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 18.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Мухитдинов Хикматулла<br/> Кудратович </h4>*/}
+                        {/*            <p>*/}
+                        {/*                начальник Отдела инженерно*/}
+                        {/*                -технического и хозяйственного*/}
+                        {/*                обслуживания ГП «Госгеолинформцентр» Госкомгеологии*/}
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 17.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Ахмедов Кобилжон<br/> Абдуказимович </h4>
-                                    <p>
-                                        Госгеолфонда ГП <br/>
-                                        «Госгеолинформцентр»<br/> Госкомгеологии Республики<br/>
-                                        Узбекистан
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 17.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Ахмедов Кобилжон<br/> Абдуказимович </h4>*/}
+                        {/*            <p>*/}
+                        {/*                Госгеолфонда ГП <br/>*/}
+                        {/*                «Госгеолинформцентр»<br/> Госкомгеологии Республики<br/>*/}
+                        {/*                Узбекистан*/}
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 16.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Курбанов Абдувахид<br/>
-                                        Фарход огли</h4>
-                                    <p>
-                                        Начальник отдела<br/> государственного кадастра
-                                        ГП <br/>«Госгеолинформцентр»<br/> Госкомгеологии
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 16.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Курбанов Абдувахид<br/>*/}
+                        {/*                Фарход огли</h4>*/}
+                        {/*            <p>*/}
+                        {/*                Начальник отдела<br/> государственного кадастра*/}
+                        {/*                ГП <br/>«Госгеолинформцентр»<br/> Госкомгеологии*/}
 
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 14.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Жуков Александр<br/>
-                                        Владимировичи</h4>
-                                    <p>
-                                        Начальник отдела геолого<br/>-экономической оценки ГП <br/>
-                                        «Госгеолинформцентр»<br/>
-                                        Госкомгеологии
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3" onClick={() => openModal()}>
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 122.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Головко Елена Александровна</h4>
-                                    <p>
-                                        Начальник отдела
-                                        производственно-технической,
-                                        информации ГП
-                                        «Госгеолинформцентр» Госкомгеологии
-                                        Республики Узбекистан
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 21.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Юлдашева Ирина<br/>
-                                        Анатольевна</h4>
-                                    <p>
-                                        Начальник отдела нормативно<br/>
-                                        -экономических исследований<br/>
-                                        ГП «Госгеолинформцентр» <br/>Госкомгеологии
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 21.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Айтметов Улугбек<br/>
-                                        Рустемович</h4>
-                                    <p>
-                                        Главный бухгалтера ГП<br/>
-                                        "Госгеолинформцентр" <br/>Госкомгеологии Республики <br/>
-                                        Узбекистан
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-3">
-                            <div className="card">
-                                <div className="card-img-top">
-                                    <img src="./images/Rectangle 21.png"/>
-                                </div>
-                                <div className="card-body">
-                                    <h4>Хадиметов Ахматбой<br/> Исаматович</h4>
-                                    <p>
-                                        Начальник отдела ИКТ
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 14.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Жуков Александр<br/>*/}
+                        {/*                Владимировичи</h4>*/}
+                        {/*            <p>*/}
+                        {/*                Начальник отдела геолого<br/>-экономической оценки ГП <br/>*/}
+                        {/*                «Госгеолинформцентр»<br/>*/}
+                        {/*                Госкомгеологии*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3" onClick={() => openModal()}>*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 122.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Головко Елена Александровна</h4>*/}
+                        {/*            <p>*/}
+                        {/*                Начальник отдела*/}
+                        {/*                производственно-технической,*/}
+                        {/*                информации ГП*/}
+                        {/*                «Госгеолинформцентр» Госкомгеологии*/}
+                        {/*                Республики Узбекистан*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 21.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Юлдашева Ирина<br/>*/}
+                        {/*                Анатольевна</h4>*/}
+                        {/*            <p>*/}
+                        {/*                Начальник отдела нормативно<br/>*/}
+                        {/*                -экономических исследований<br/>*/}
+                        {/*                ГП «Госгеолинформцентр» <br/>Госкомгеологии*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 21.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Айтметов Улугбек<br/>*/}
+                        {/*                Рустемович</h4>*/}
+                        {/*            <p>*/}
+                        {/*                Главный бухгалтера ГП<br/>*/}
+                        {/*                "Госгеолинформцентр" <br/>Госкомгеологии Республики <br/>*/}
+                        {/*                Узбекистан*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-3">*/}
+                        {/*    <div className="card">*/}
+                        {/*        <div className="card-img-top">*/}
+                        {/*            <img src="./images/Rectangle 21.png"/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="card-body">*/}
+                        {/*            <h4>Хадиметов Ахматбой<br/> Исаматович</h4>*/}
+                        {/*            <p>*/}
+                        {/*                Начальник отдела ИКТ*/}
+                        {/*            </p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
 
@@ -246,4 +283,10 @@ const Stafff = () => {
     );
 };
 
-export default Stafff;
+const mapStateToProps =(state)=>{
+    return{
+        staf : state.staf.staf
+    }
+}
+
+export default connect(mapStateToProps,{getStaf})(Stafff);

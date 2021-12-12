@@ -102,6 +102,30 @@
   line-height: 16px;
   color: #0166FF;
 }
+.languageSelect{
+img{
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+  select{
+    border: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #201918;
+    &:focus{
+      outline: none;
+    }
+    option{
+      border: 0;
+      outline: none;
+    }
+  }
+}
 
 .navbarNav {
   margin-top: 12px;
@@ -640,8 +664,9 @@
   padding: 45px 0;
   .col-12 {
     padding: 0 0;
-
+    //display: flex;
     .card {
+      width: 100%;
       cursor: pointer;
       background-color: #E5EBF7;
       border: 1px solid #E5EBF7;
@@ -739,9 +764,10 @@
       margin-top: 30px;
       border-radius: 32px 32px 0px 0px;
       .card-img-top {
-        //border-radius: 32px 32px 0px 0px;
+        border-radius: 32px 32px 0px 0px;
         img {
           width: 262px;
+          border-radius: 32px 32px 0px 0px;
         }
       }
       .card-body {

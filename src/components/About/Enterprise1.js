@@ -1,10 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect , useState} from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import DropdownItem2 from "./DropdownItem2";
 import {Collapse} from "react-collapse";
+// import {API_PATH} from "../../tools/constants";
+import {connect} from "react-redux";
+import {getMaqsad,getVazifalar , enterpriseState} from "../../redux/actions/enterpriseAction";
 
-const Enterprise1 = () => {
+const Enterprise1 = (props) => {
+
+    useEffect(()=>{
+      props.getMaqsad();
+      props.getVazifalar()
+    },[])
+
+    const [purpose, setpurpose] = useState([]);
     const [isDropdownOpen, setisDropdownOpen] = useState(false);
     const [isDropdownOpen2, setisDropdownOpen2] = useState(false);
 
@@ -29,19 +39,21 @@ const Enterprise1 = () => {
                                         <div className="card-body">
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <h1>Корхонасининг асосий мақсади</h1>
-                                                <button className="border-0 bg-transparent" onClick={() => onDropdownClicked()}>
+                                                <button className="border-0 bg-transparent"
+                                                        onClick={() => onDropdownClicked()}>
                                                     <img
                                                         src={`${isDropdownOpen == true ? "./images/Vector2.png" : "./images/plus.png"}`}
                                                     />
                                                 </button>
                                             </div>
                                             <Collapse isOpened={isDropdownOpen}>
-                                                <span>
-                                        Ўзбекистон Давлат Геология Қўмитаси (Давгеолқўм) 1991 йил 12 февралдан Ўзбекистон Республикаси Президенти томонидан <br/>
-                                        № ПҚ-142-сонли қарорига биноан ташкил қилинган ва Ўзбекистон Республикаси Вазирлар Маҳкамасининг 27.04.2018 йилдаги<br/>
-                                        315-сонли Қарорига мувофиқ “Ўзбекистон
-                                        Республикаси Давлат геология ва минерал ресурслар қўмитаси тўғрисида Низом”и тасдиқланишига амал қилади.
-                                                 </span>
+                                                    {props.maqsadi.map((item,index)=>{
+                                                        return(
+                                                            <span key={props}>
+                                                                {item.text}
+                                                            </span>
+                                                        )
+                                                    })}
                                             </Collapse>
                                         </div>
                                     </div>
@@ -55,14 +67,15 @@ const Enterprise1 = () => {
                                     <div className="card" onClick={() => onDropdownClicked2()}>
                                         <div className="card-body">
                                             {/*<div className="col-12">*/}
-                                                <div className="d-flex justify-content-between align-items-center">
-                                                    <h1>Корхонасининг асосий вазифалари</h1>
-                                                    <button className="border-0 bg-transparent" onClick={() => onDropdownClicked2()}>
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <h1>Корхонасининг асосий вазифалари</h1>
+                                                <button className="border-0 bg-transparent"
+                                                        onClick={() => onDropdownClicked2()}>
                                                     <img
                                                         src={`${isDropdownOpen2 == true ? "./images/Vector2.png" : "./images/plus.png"}`}
                                                     />
                                                 </button>
-                                                </div>
+                                            </div>
                                             {/*</div>*/}
                                             <Collapse isOpened={isDropdownOpen2}>
                                                 <div className="row mb-3">
@@ -294,4 +307,10 @@ const Enterprise1 = () => {
     );
 };
 
-export default Enterprise1;
+const mapStateToProps = (state) => {
+    return {
+        maqsadi: state.enterprise.maqsadi,
+        vazifasi: state.enterprise.vazifasi,
+    }
+}
+export default connect(mapStateToProps, {getMaqsad, getVazifalar, enterpriseState})(Enterprise1);

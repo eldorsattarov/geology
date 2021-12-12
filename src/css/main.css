@@ -69,6 +69,29 @@
   color: #0166FF;
 }
 
+.languageSelect img {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.languageSelect select {
+  border: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #201918;
+}
+.languageSelect select:focus {
+  outline: none;
+}
+.languageSelect select option {
+  border: 0;
+  outline: none;
+}
+
 .navbarNav {
   margin-top: 12px;
   background: #FFFFFF;
@@ -524,6 +547,7 @@
   padding: 0 0;
 }
 .enterpriseOne .col-12 .card {
+  width: 100%;
   cursor: pointer;
   background-color: #E5EBF7;
   border: 1px solid #E5EBF7;
@@ -611,8 +635,12 @@
   margin-top: 30px;
   border-radius: 32px 32px 0px 0px;
 }
+.staff .col-3 .card .card-img-top {
+  border-radius: 32px 32px 0px 0px;
+}
 .staff .col-3 .card .card-img-top img {
   width: 262px;
+  border-radius: 32px 32px 0px 0px;
 }
 .staff .col-3 .card .card-body {
   background-color: #E5EBF7;

@@ -14,6 +14,6 @@ export const getAccounting = () => (dispatch) =>{
     axios.get(API_PATH + "Buhgalteriya/")
         .then((res)=>{
            console.log(res);
-           dispatch(updateState({accounting : res.data.results}))
+           dispatch(accountingState({accounting : res.data.results}));
         })
 }

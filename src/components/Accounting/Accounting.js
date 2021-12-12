@@ -30,7 +30,7 @@ const Accounting = (props) => {
                             return(
                                 <div className="accountingSection">
                                     <span>{item.text}</span>
-                                    <a href={item.excel_file}> <img src="./images/fi_download.png"/></a>
+                                    <a href={item.excel_file} key={props}> <img src="./images/fi_download.png"/></a>
                                 </div>
                             )
                         })}

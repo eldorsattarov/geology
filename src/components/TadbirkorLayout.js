@@ -56,10 +56,13 @@ const TadbirkorLayout = (props) => {
 
 
                                 <div className="d-flex align-items-center">
-                                    <select>
-                                        <option>Uzbek</option>
-                                        <option>Uzbek</option>
-                                    </select>
+                                    <div className="d-flex align-items-center languageSelect">
+                                        <img src="../images/fi_globe2.png"/>
+                                        <select>
+                                            <option>Ўзбекча</option>
+                                            <option>Русский</option>
+                                        </select>
+                                    </div>
                                    <div>
                                        <img src="../images/tadbirkor.png"/>
                                        <span>Саттаров Элдор</span>
