@@ -20,7 +20,10 @@
 }
 .navbarTopRight .imgFrom {
   position: absolute;
-  left: 0;
+  left: -67%;
+  z-index: 1;
+  background-color: white;
+  padding: 0 10px;
 }
 .navbarTopRight .imgFrom img {
   width: 20px;

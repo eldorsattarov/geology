@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import HeaderUpper from "./HeaderUpper";
 import {AvForm, AvField} from "availity-reactstrap-validation";
 import {Link} from "react-router-dom";
 import {wrapMapToPropsConstant} from "react-redux/lib/connect/wrapMapToProps";
 
 const Header = () => {
+
+///////////////////////////////
     const [open, setOpen] = useState(false);
     const [clear , setClear] = useState('')
 
@@ -18,6 +20,7 @@ const Header = () => {
     }
 
 
+
     return (
         <div className="navbarTop">
             <div className="container">
@@ -27,7 +30,7 @@ const Header = () => {
                             <div className="navbarTopLeft d-flex align-items-center">
                                 <img src="./images/logoN1.png" className="logo"/>
                                 <span className="logoText">
-                                Геология ахборот маркази <br/>Давлат корхонаси
+                               Ўзбекистон Республикаси Давлат Геология қўмитаси “Давлат геология ахборот маркази” ДК директори
                             </span>
                             </div>
                         </Link>
@@ -45,8 +48,8 @@ const Header = () => {
                             </div>
                             <img src={`${open === false ? "./images/fi_search.png" : "./images/fi_x2.png"}`}
                                  className="icons" onClick={() => openInput()}/>
-
                             <img src="./images/fi_eye.png" className="icons"/>
+
                             {/*<Link to="/loginEtp" className="text-decoration-none">*/}
                             <Link to="/tadbirkor/korxonaHaqida" className="text-decoration-none">
                                 <span className="eri">ЭРИ орқали кириш</span>
@@ -54,9 +57,10 @@ const Header = () => {
 
                             <div className="d-flex align-items-center languageSelect">
                                 <img src="./images/fi_globe2.png"/>
-                                <select>
-                                    <option>Ўзбекча</option>
-                                    <option>Русский</option>
+                                <select
+                                >
+                                    <option value="uz">Ўзбекча</option>
+                                    <option value="ru">Русский</option>
                                 </select>
                             </div>
 

@@ -19,8 +19,11 @@ const TadbirkorLayout = (props) => {
                             <Link to="/tadbirkor/ariza" className={`nav-link ${props.history.location.pathname === "/tadbirkor/ariza" ? 'active' : ""}`}><img src="../images/tadbirkor2.png"/><span>Ариза юбориш</span></Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/tadbirkor/meningarizam" className={`nav-link ${props.history.location.pathname === "/tadbirkor/meningarizam" ? 'active' : ""}`}><img src="../images/tadbirkor3.png"/><span>Менинг аризаларим</span></Link>
+                            <Link to="/tadbirkor/meningarizam" className={`nav-link ${props.history.location.pathname === "/tadbirkor/meningarizam" || props.history.location.pathname === "/tadbirkor/arizam" ? 'active' : ""}`}><img src="../images/tadbirkor3.png"/><span>Менинг аризаларим</span></Link>
                         </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <Link to="/tadbirkor/meningarizam" className={`nav-link ${props.history.location.pathname === "/tadbirkor/meningarizam" ? 'active' : ""}`}><img src="../images/tadbirkor3.png"/><span>Менинг аризаларим</span></Link>*/}
+                        {/*</li>*/}
                         <li className="nav-item">
                             <Link to="/tadbirkor/konxaqida" className={`nav-link ${props.history.location.pathname === "/tadbirkor/konxaqida" ? 'active' : ""}`}><img src="../images/tadbirkor4.png"/><span>Кон ҳақида маълумотлар</span></Link>
                         </li>

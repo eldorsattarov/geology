@@ -41,7 +41,12 @@
 .navbarTopRight {
   position: relative;
   .imgFrom{
-    position: absolute; left: 0;
+    position: absolute;
+    left: -67%;
+    z-index: 1;
+    background-color: white;
+
+    padding: 0 10px;
     img{
       width: 20px;
       height: 20px;
