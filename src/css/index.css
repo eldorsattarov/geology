@@ -117,6 +117,9 @@
   padding: 20px 0;
 }
 
+.tablePagination {
+  width: 2600px;
+}
 .tablePagination th {
   width: 60px;
 }

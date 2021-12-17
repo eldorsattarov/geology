@@ -3,7 +3,9 @@ import {STAF} from "../types/stafType";
 
 
 const intialState = {
-    staf : []
+    open : false,
+    staf : [],
+    stafSelected : {}
 }
 
 export const stafReducer = (state=intialState , action) =>{

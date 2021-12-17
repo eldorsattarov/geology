@@ -11,7 +11,6 @@ const HomePageSection2 = () => {
                         <Link to="/mineralResources">
                             <button type="button" className="btn">Батафсил малумот</button>
                         </Link>
-
                     </div>
                     <div className="col-6">
                         <img src="./images/pngwing 1 (2).png"/>

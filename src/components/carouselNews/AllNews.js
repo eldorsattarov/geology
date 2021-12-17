@@ -11,7 +11,7 @@ const AllNews = (props) => {
 
     useEffect(() => {
         props.getNews()
-    })
+    },[])
 
     return (
         <div>
@@ -23,7 +23,7 @@ const AllNews = (props) => {
                         <div className="row mt-3">
                             {props.news.map((item, index) => {
                                 return (
-                                    <div className="col-4 mt-4">
+                                    <div className="col-4 mt-4" key={item.id}>
                                         <div className="card">
                                             <div className="card-img-top">
                                                 <img src={item.img} className="w-100"/>

@@ -76,7 +76,7 @@ const HeaderUpper = (props) => {
                         </div>
 
                         {/*<a href="https://exarid.uzex.uz" target="_blank" className="aLink">Буғалтерия ҳисоботи</a>*/}
-                        <Link to="/accounting" className="aLink">Буғалтерия ҳисоботи</Link>
+                        <Link to="/accounting" className="aLink">Молиявий хисоботлар</Link>
 
                         <Link to="/aloqa" className="aLink">Алоқа</Link>
                     </div>

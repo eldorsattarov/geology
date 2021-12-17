@@ -5,12 +5,12 @@ import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
 import axios from "axios";
 import {API_PATH} from "../../tools/constants";
 import {connect} from "react-redux";
-import {getStaf} from "../../redux/actions/stafAction";
+import {getStaf , stafState} from "../../redux/actions/stafAction";
 
 const Stafff = (props) => {
 
     const [staf , setStaf] = useState([])
-    const [open, setOpen] = useState(false);
+    // const [open, setOpen] = useState(false);
 
     useEffect(()=>{
         props.getStaf();
@@ -26,9 +26,9 @@ const Stafff = (props) => {
            display : "none"
         }
     }
-    const openModal = () => {
-        setOpen(true)
-    }
+    // const openModal = () => {
+    //     setOpen(true)
+    // }
     return (
         <div>
             <Header/>
@@ -39,20 +39,18 @@ const Stafff = (props) => {
                         <div className="col-12 mb-4"><h1>Ходимлар</h1></div>
                         {props.staf.map((item,index)=>{
                             return(
-                                <div className="col-3 " onClick={() => openModal()} key={item.id}>
+                                <div className="col-3 " key={item.id}
+                                     onClick={()=>props.stafState({open:!props.open , stafSelected: item})}>
+                                    {console.log("selected")}
+                                    {console.log(props.stafSelected)}
                                     <div className="card">
                                         <div className="card-img-top">
-                                            {/*{item.img}*/}
                                             <img src={item.img}/>
                                         </div>
                                         <div className="card-body">
                                             <h4>{item.full_name}</h4>
-                                            {/*<h4>Варисов Аълохон<br/>Аббасович </h4>*/}
                                               <p>
-                                                {item.info}
-                                                {/*Директор ГП «Госгеолинформцентр»<br/>*/}
-                                                {/*Госкомгеологии Республики<br/>*/}
-                                                {/*Узбекистан*/}
+                                                {item.position}
                                             </p>
                                         </div>
                                     </div>
@@ -238,35 +236,34 @@ const Stafff = (props) => {
                 </div>
 
 
-                <Modal isOpen={open} toggle={() => setOpen(!open)} className="" style={modalStyle}>
+                <Modal isOpen={props.open} toggle={()=>props.stafState({open :!props.open})} className="" style={modalStyle}>
                     {/*<ModalBody>*/}
                     <div className="xodimForm1">
                         <div className="container">
                             <div className="row">
                                 <div className="d-flex">
-                                    <img src="./images/Rectangle 21.png" className="ModalImgOne"/>
-                                    <img src="./images/fi_x.png" className="ModalImgTwo" onClick={()=>setOpen(!open)}/>
+                                    <img src={props.stafSelected.img} className="ModalImgOne"/>
+                                    <img src="./images/fi_x.png" className="ModalImgTwo"
+                                         onClick={()=>props.stafState({open :!props.open})}/>
                                     <div className="row ml-3">
-                                        <div className="col-12 mt-5"><h4>Варисов Аълохон Аббасович </h4></div>
+                                        <div className="col-12 mt-5"><h4>{props.stafSelected.full_name}</h4></div>
                                         <div className="col-4">
                                             <span>Мутахассислиги:</span>
                                         </div>
                                         <div className="col-8 pl-0">
-                                            <a>Директор ГП «Госгеолинформцентр» Госкомгеологии<br/> Республики
-                                                Узбекистан</a>
+                                            <a>{props.stafSelected.position}</a>
                                         </div>
                                         <div className="col-4">
                                             <span>Телефон : </span>
                                         </div>
                                         <div className="col-8 pl-0">
-                                            <a>Cл. 71-256-07-02<br/>
-                                                Cот. 93-558-79-73</a>
+                                            <a>{props.stafSelected.phone}</a>
                                         </div>
                                         <div className="col-4">
                                             <span>Электронная почта: </span>
                                         </div>
                                         <div className="col-8 pl-0">
-                                            <a>varisovaloxon@gmail.com</a>
+                                            <a>{props.stafSelected.email}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -285,8 +282,10 @@ const Stafff = (props) => {
 
 const mapStateToProps =(state)=>{
     return{
-        staf : state.staf.staf
+        staf : state.staf.staf,
+        stafSelected: state.staf.stafSelected,
+        open : state.staf.open
     }
 }
 
-export default connect(mapStateToProps,{getStaf})(Stafff);
+export default connect(mapStateToProps,{getStaf , stafState})(Stafff);

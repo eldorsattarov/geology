@@ -19,7 +19,7 @@ export const getMaqsad = () => (dispatch) =>{
 export const getVazifalar = () => (dispatch) =>{
         axios.get(API_PATH + "Asosiy-vazifalar/")
         .then((res)=>{
-            dispatch(enterpriseState({vazifasi : res.data}))
-            console.log(res)
+            dispatch(enterpriseState({vazifasi : res.data.results}));
+            console.log(res);
         })
 }

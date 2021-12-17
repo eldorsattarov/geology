@@ -28,9 +28,9 @@ const Accounting = (props) => {
                     <div className="row">
                         {props.accounting.map((item, index)=>{
                             return(
-                                <div className="accountingSection">
+                                <div className="accountingSection" key={item.id}>
                                     <span>{item.text}</span>
-                                    <a href={item.excel_file} key={props}> <img src="./images/fi_download.png"/></a>
+                                    <a href={item.excel_file}> <img src="./images/fi_download.png"/></a>
                                 </div>
                             )
                         })}

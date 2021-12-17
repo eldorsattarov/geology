@@ -73,37 +73,30 @@ class Pagination extends Component {
                            </div>
                                <div className="row">
                                 <div className="col-6 pl-0">
-                                    <Label>ГОРНОРУДНОЕ СЫРЬЕ</Label>
+                                    <Label>Тоғ-кон хом ашёлари</Label>
                                     <AvField type="select" name="select" className="avfieldMineral">
-                                        <option>СЫРЬЕ ДЛЯ ПРОИЗВОДСТВА МИНЕРАЛЬНОГО ВОЛОКНА (тыс.т)</option>
-                                        <option>СЫРЬЕ ДЛЯ ПРОИЗВОДСТВА МИНЕРАЛЬНОГО ВОЛОКНА (тыс.т)</option>
-                                        <option>СЫРЬЕ ДЛЯ ПРОИЗВОДСТВА МИНЕРАЛЬНОГО ВОЛОКНА (тыс.т)</option>
+                                        <option>Минерал тола ишлаб чиқариш учун хом ашё (минг тонна)</option>
                                     </AvField>
                                 </div>
                                 <div className="col-6 pr-0">
-                                    <Label>СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</Label>
+                                    <Label>Қурилиш материаллари</Label>
                                     <AvField type="select" name="select" className="avfieldMineral">
-                                        <option>ПЕСКИ ДЛЯ СТРОИТЕЛЬНЫХ РАБОТ И СИЛИКАТНЫХ ИЗДЕЛИЙ (тыс.м3)</option>
-                                        <option>ПЕСКИ ДЛЯ СТРОИТЕЛЬНЫХ РАБОТ И СИЛИКАТНЫХ ИЗДЕЛИЙ (тыс.м3)</option>
-                                        <option>ПЕСКИ ДЛЯ СТРОИТЕЛЬНЫХ РАБОТ И СИЛИКАТНЫХ ИЗДЕЛИЙ (тыс.м3)</option>
+                                        <option>Қолиплаш материаллари (минг тонна)</option>
                                     </AvField>
                                 </div>
                                </div>
                                <div className="row">
                                 <div className="col-4 pl-0">
-                                    <Label>ОБЛАСТИ</Label>
+                                    <Label>Вилоятлар</Label>
                                     <AvField type="select" name="select" className="avfieldMineral">
-                                        <option>САМАРКАНД</option>
-                                        <option>САМАРКАНД</option>
-                                        <option>САМАРКАНД</option>
+                                        <option>Самарқанд</option>
+
                                     </AvField>
                                 </div>
                                 <div className="col-4">
-                                    <Label>Район</Label>
+                                    <Label>Туманлар</Label>
                                     <AvField type="select" name="select" className="avfieldMineral">
-                                        <option>Район</option>
-                                        <option>Район</option>
-                                        <option>Район</option>
+                                        <option>Нурабадский</option>
                                     </AvField>
                                 </div>
                                    <div className="col-4 d-flex align-items-end justify-content-end">
@@ -122,35 +115,31 @@ class Pagination extends Component {
                                    <thead>
                                    <tr>
                                        <th className="align-middle bt-0">№ <br/>п/п</th>
-                                       <th className="align-middle bt-0">ГОРНОРУДНОЕ СЫРЬЕ</th>
-                                       <th className="align-middle bt-0">Название месторождений,<br/>
-                                           их местоположение
+                                       <th className="align-middle bt-0">Тоғ-кон хом<br/> ашёлари</th>
+                                       <th className="align-middle bt-0">Конлар номи ва жойлашиш <br/>манзили
                                        </th>
-                                       <th>Состояние запасов<br/>
-                                           категории А+В+С1
+                                       <th>А+Б+С1 тоифадаги<br/>
+                                           захиралар ҳолати
                                        </th>
-                                       <th>Состояние запасов<br/>
-                                           категории С2
+                                       <th>С2  тоифадаги<br/> захиралар ҳолати
                                        </th>
-                                       <th>Сведения об эксплуатации<br/>
-                                           Степень освоения
+                                       <th>
+                                           Фойдаланганлик<br/> тўғрисидаги маълумотлар
                                        </th>
-                                       <th>Сведения об эксплуатации<br/>
-                                           № и дата Лицензии
+                                       <th>Фойдаланганлик<br/> тўғрисидаги маълумотлар<br/>
+                                           Лицензия № ва санаси
                                        </th>
-                                       <th>Объем добычи<br/>
-                                           на 2019 год
+                                       <th>2019 йилдаги<br/> қазиб олиш ҳажми
                                        </th>
-                                       <th>Ведомственная<br/>
-                                           принадлежность
+                                       <th>Идоравий мансубликь
                                        </th>
-                                       <th>Год
-                                           утверждения<br/>
-                                           запасов, № протокола
+                                       <th>Захиралар
+                                           тасдиқланган
+                                           йил, баённома №
                                        </th>
-                                       <th>Сырьё</th>
-                                       <th>ОБЛАСТИ</th>
-                                       <th>Район</th>
+                                       <th>Хом ашё</th>
+                                       <th>Вилоят</th>
+                                       <th>Туман</th>
                                    </tr>
                                    </thead>
                                    <tbody>
