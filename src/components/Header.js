@@ -39,7 +39,7 @@ const Header = () => {
                                 <img src="./images/fi_search2.png"
                                      className={`${open === false ? "dNone" : ""}`}/>
                                 <AvForm className={`avform ${open === false ? "dNone" : ""}`}>
-                                    <AvField type="text" name="search" className="avform2" placeholder="Qidiruv"
+                                    <AvField type="text" name="search" className="avform2" placeholder="Қидирув"
                                              value={clear}
                                              onChange={e => clearInput(e)}
                                              // onClick={()=>clearInput}

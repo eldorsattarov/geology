@@ -27,6 +27,7 @@ import MineralResources from "./components/MineralResources/MineralResources";
 import Index from "./components/MineralResources/Index";
 import Login from "./pages/Login";
 import Arizam from "./Tadbirkor/Arizam";
+import BeshGRshakli from "./Tadbirkor/BeshGRshakli";
 
 const App = () => {
     return (
@@ -74,6 +75,7 @@ const App = () => {
                 <Route path="/tadbirkor/konxaqida" exact component={KonXaqida}/>
                 <Route path="/tadbirkor/interaktivxarita" exact component={InteraktivXarita}/>
                 <Route path="/tadbirkor/vebxarita" exact component={VebXarita}/>
+                <Route path="/tadbirkor/beshGr" exact component={BeshGRshakli}/>
 
             </Switch>
 

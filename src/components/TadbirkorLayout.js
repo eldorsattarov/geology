@@ -33,6 +33,9 @@ const TadbirkorLayout = (props) => {
                         <li className="nav-item">
                             <Link to="/tadbirkor/vebxarita" className={`nav-link ${props.history.location.pathname === "/tadbirkor/vebxarita" ? 'active' : ""}`}><img src="../images/tadbirkor6.png"/><span>Веб-харита</span></Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/tadbirkor/beshGr" className={`nav-link ${props.history.location.pathname === "/tadbirkor/beshGr" ? 'active' : ""}`}><img src="../images/5gr.png"/><span>5-ГР шакли</span></Link>
+                        </li>
                         </ul>
                 </div>
             </div>
@@ -50,7 +53,9 @@ const TadbirkorLayout = (props) => {
                                                     props.history.location.pathname === "/tadbirkor/konxaqida" ? "Кон ҳақида маълумотлар" :(
                                                         props.history.location.pathname === "/tadbirkor/interaktivxarita"?"Интерактив харита":(
                                                             props.history.location.pathname === "/tadbirkor/vebxarita" ? "Веб-харита" : (
-                                                                props.history.location.pathname === "/tadbirkor/arizam" ? "Aризам" : ""
+                                                                props.history.location.pathname === "/tadbirkor/arizam" ? "Aризам" : (
+                                                                    props.history.location.pathname === "/tadbirkor/beshGr" ? "5-ГР шакли" : ""
+                                                                )
                                                             )
                                                         )
                                                     )

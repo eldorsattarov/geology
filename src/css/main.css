@@ -946,5 +946,59 @@
   line-height: 32px;
   color: #000714;
 }
+.accounting .acbacround {
+  background: #E5EBF7;
+  padding: 10px 0;
+  box-shadow: 0 0 0 0;
+  border: 0;
+}
+.accounting .acbacround .lineac {
+  border: 1px solid #7B808C;
+  width: 100%;
+  margin: 15px 0;
+}
+.accounting .acbacround .lineac2 {
+  border: 1px solid #7B808C;
+  width: 100%;
+}
+.accounting .acbacround span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0166FF;
+}
+.accounting .acbacround .acbacround2 {
+  background: #E5EBF7;
+  box-shadow: 0 0 0 0;
+}
+.accounting .acbacround .acbacround2:before {
+  display: none;
+}
+.accounting .acbacround .acbacround2 span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0166FF;
+}
+.accounting .acbacround .acbacround2 .actitle2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000714;
+}
+.accounting .actitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000714;
+}
 
 /*# sourceMappingURL=main.css.map */

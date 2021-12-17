@@ -15,9 +15,10 @@
 //  font-family: "Inter-SemiBold";
 //  src: url("./public/font/Inter/Inter-SemiBold.ttf") format("truetype");
 //}
-*{
+* {
 
 }
+
 .navbar1 {
   padding-bottom: 10px;
   border-bottom: 2px solid #E5EBF7;
@@ -40,38 +41,44 @@
 
 .navbarTopRight {
   position: relative;
-  .imgFrom{
+
+  .imgFrom {
     position: absolute;
     left: -67%;
     z-index: 1;
     background-color: white;
 
     padding: 0 10px;
-    img{
+
+    img {
       width: 20px;
       height: 20px;
       //margin-right: 0;
     }
   }
-  .dNone{
+
+  .dNone {
     display: none;
   }
-  .avform{
+
+  .avform {
     //position: absolute;
-    width:58%;
+    width: 58%;
     //display: none;
     left: 0;
     margin-top: 15px;
     box-shadow: 0 0 0 0;
-    .avform2{
+
+    .avform2 {
       border: 0;
-      width:270%;
+      width: 270%;
       box-shadow: 0 0 0 0;
 
-      &:focus{
+      &:focus {
 
       }
-      placeholder{
+
+      placeholder {
         font-family: Inter;
         font-style: normal;
         font-weight: normal;
@@ -81,6 +88,7 @@
 
     }
   }
+
   width: 65%;
   justify-content: end;
 
@@ -107,14 +115,16 @@
   line-height: 16px;
   color: #0166FF;
 }
-.languageSelect{
-img{
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  margin-right: 4px;
-}
-  select{
+
+.languageSelect {
+  img {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+  }
+
+  select {
     border: 0;
     font-family: Roboto;
     font-style: normal;
@@ -122,10 +132,12 @@ img{
     font-size: 14px;
     line-height: 16px;
     color: #201918;
-    &:focus{
+
+    &:focus {
       outline: none;
     }
-    option{
+
+    option {
       border: 0;
       outline: none;
     }
@@ -138,9 +150,10 @@ img{
   box-shadow: 0px 4px 4px rgba(0, 7, 20, 0.15);
   padding-bottom: 15px;
   //margin-bottom: 15px;
-  .aLink{
+  .aLink {
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       position: absolute;
       height: 3px;
@@ -152,8 +165,9 @@ img{
       transition: all 0.3s ease-in-out;
       transform: scaleX(0);
     }
-    &:hover{
-      &:before{
+
+    &:hover {
+      &:before {
         width: 100%;
         transform: scaleX(1);
       }
@@ -195,7 +209,7 @@ img{
     color: black;
     font-weight: bold;
     background-color: white;
-   //position: relative;
+    //position: relative;
     &:before {
       content: "";
       position: absolute;
@@ -237,7 +251,8 @@ img{
     .links {
       position: relative;
       padding: 8px 0;
-      &:before{
+
+      &:before {
         content: "";
         position: absolute;
         top: 0;
@@ -249,11 +264,13 @@ img{
         transition: all 0.2s linear;
         transform: scaleY(0);
       }
-      &:hover{
-        .tabLink{
+
+      &:hover {
+        .tabLink {
           margin-left: 5px;
         }
-        &:before{
+
+        &:before {
           height: 90%;
           transform: scaleY(1);
         }
@@ -309,7 +326,8 @@ img{
     .links {
       position: relative;
       padding: 8px 0;
-      &:before{
+
+      &:before {
         content: "";
         position: absolute;
         top: 0;
@@ -321,11 +339,13 @@ img{
         transition: all 0.2s linear;
         transform: scaleY(0);
       }
-      &:hover{
-        .tabLink{
+
+      &:hover {
+        .tabLink {
           margin-left: 5px;
         }
-        &:before{
+
+        &:before {
           height: 90%;
           transform: scaleY(1);
         }
@@ -340,6 +360,7 @@ img{
   img {
     margin-right: 15px;
   }
+
   .aLink {
     font-family: Inter;
     font-style: normal;
@@ -347,6 +368,7 @@ img{
     font-size: 16px;
     line-height: 24px;
   }
+
   a {
     color: black;
     text-decoration: none;
@@ -356,6 +378,7 @@ img{
     font-size: 18px;
     line-height: 24px;
   }
+
   span {
     font-family: Inter;
     font-style: normal;
@@ -370,14 +393,16 @@ img{
   background-color: #001009;
   padding-top: 60px;
   padding-bottom: 40px;
-  .uzbRes{
+
+  .uzbRes {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
     color: #424752;
-    a{
+
+    a {
       //target: "_blank";
     }
   }
@@ -527,13 +552,15 @@ img{
   img {
     width: 100%;
   }
-  .img2{
+
+  .img2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 60%;
     height: 100%;
   }
+
   position: relative;
   margin-top: 1px;
 }
@@ -547,14 +574,16 @@ img{
   position: absolute;
   top: 0;
   margin-top: 50px;
-  p{
+
+  p {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
   }
-  .textBlue{
+
+  .textBlue {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -564,13 +593,14 @@ img{
     text-decoration: none;
     //cursor: revert;
   }
- span{
-   font-family: Inter;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 16px;
-   line-height: 24px;
- }
+
+  span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .section4 {
@@ -635,6 +665,7 @@ img{
     }
   }
 }
+
 .section5 {
   padding: 72px 0;
 
@@ -667,6 +698,7 @@ img{
 
 .enterpriseOne {
   padding: 45px 0;
+
   .col-12 {
     padding: 0 0;
     //display: flex;
@@ -678,6 +710,7 @@ img{
       box-sizing: border-box;
       border-radius: 8px;
       padding: 0 10px;
+
       h1 {
         font-family: Inter;
         font-style: normal;
@@ -693,7 +726,8 @@ img{
         font-size: 16px;
         line-height: 24px;
       }
-      h6{
+
+      h6 {
         font-family: Inter;
         font-style: normal;
         font-weight: 600;
@@ -757,28 +791,34 @@ img{
 
 .staff {
   padding: 45px 0;
-  h1{
+
+  h1 {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 40px;
   }
+
   .col-3 {
     .card {
       margin-top: 30px;
       border-radius: 32px 32px 0px 0px;
+
       .card-img-top {
         border-radius: 32px 32px 0px 0px;
+
         img {
           width: 262px;
           border-radius: 32px 32px 0px 0px;
         }
       }
+
       .card-body {
         background-color: #E5EBF7;
         //padding-bottom: 0px;
         height: 220px;
+
         h4 {
           font-family: Inter;
           font-style: normal;
@@ -788,7 +828,7 @@ img{
         }
 
         p {
-          font-family:Inter;
+          font-family: Inter;
           font-style: normal;
           font-weight: normal;
           font-size: 15px;
@@ -833,7 +873,8 @@ img{
   border-radius: 32px;
   margin-left: -50%;
   margin-top: 40%;
- transition: all 0.5s linear;
+  transition: all 0.5s linear;
+
   .ModalImgOne {
     margin-left: 40px;
     margin-top: -40px;
@@ -841,12 +882,14 @@ img{
     width: 266px;
     height: 266px;
   }
-.modala{
-  position: absolute;
-  background: #0153a8;
-  width: 100%;
-  height: 100%;
-}
+
+  .modala {
+    position: absolute;
+    background: #0153a8;
+    width: 100%;
+    height: 100%;
+  }
+
   .ModalImgTwo {
     position: absolute;
     margin-top: -30px;
@@ -884,13 +927,15 @@ img{
 
 .youthunion {
   padding: 45px 0;
-  h2{
+
+  h2 {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 40px;
   }
+
   p {
     font-family: Inter;
     font-style: normal;
@@ -900,9 +945,11 @@ img{
     color: #424752;
   }
 }
-.laws{
+
+.laws {
   padding: 72px 0;
-  h1{
+
+  h1 {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -910,7 +957,8 @@ img{
     line-height: 32px;
     color: #000714;
   }
-  span{
+
+  span {
     //margin-top: px;
     font-family: Inter;
     font-style: normal;
@@ -919,7 +967,8 @@ img{
     line-height: 24px;
     color: #424752;
   }
-  p{
+
+  p {
     margin-top: 30px;
     font-family: Inter;
     font-style: normal;
@@ -928,9 +977,11 @@ img{
     line-height: 24px;
     color: #000714;
   }
-  .textLaws{
+
+  .textLaws {
     //margin-bottom: 40px;
   }
+
   .lawsLink {
     cursor: pointer;
     margin-bottom: 30px;
@@ -944,34 +995,38 @@ img{
     text-align: center;
     margin-top: 40px;
   }
+
   p {
 
     text-decoration: none;
-   span{
-     font-family: Inter;
-     font-style: normal;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 24px;
-     text-decoration: none;
-     color: white;
-   }
+
+    span {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      color: white;
+    }
   }
 
 }
+
 .lawsModal {
   position: relative;
   //height: 200px;
 }
-.lawsModalBody{
-  .radioaf{
-    label{
+
+.lawsModalBody {
+  .radioaf {
+    label {
       margin-left: 10px;
     }
   }
 
   padding: 40px 60px;
-  position:absolute;
+  position: absolute;
   width: 1028px;
   height: 291px;
   background: #FFFFFF;
@@ -981,7 +1036,7 @@ img{
   //bottom: 0;
   left: -52%;
 
-  h4{
+  h4 {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -989,7 +1044,8 @@ img{
     line-height: 32px;
     color: #000714;
   }
-  span{
+
+  span {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -997,9 +1053,11 @@ img{
     line-height: 24px;
     color: #424752;
   }
-  .labelInput{
+
+  .labelInput {
     margin-top: 30px;
-    span{
+
+    span {
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
@@ -1009,14 +1067,16 @@ img{
       margin-left: 10px;
     }
   }
-  .yuklash{
+
+  .yuklash {
     width: 240px;
     height: 48px;
     background: #0166FF;
     border-radius: 4px;
     padding: 10px 60px;
     text-decoration: none;
-    span{
+
+    span {
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
@@ -1025,7 +1085,8 @@ img{
       color: white;
     }
   }
-  .yuklash1{
+
+  .yuklash1 {
     margin-right: 20px;
     text-decoration: none;
     width: 240px;
@@ -1033,7 +1094,8 @@ img{
     border-radius: 4px;
     padding: 10px 60px;
     border: 1px solid #201918;
-    span{
+
+    span {
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
@@ -1043,7 +1105,6 @@ img{
     }
   }
 }
-
 
 
 //Accardion
@@ -1061,11 +1122,11 @@ img{
   transition: 0.4s;
 }
 
-.active, .accordion:hover{
+.active, .accordion:hover {
   background-color: #ccc;
 }
 
-.panel{
+.panel {
   padding: 0 18px;
   display: none;
   background-color: white;
@@ -1073,9 +1134,10 @@ img{
 }
 
 
-.accounting{
+.accounting {
   padding: 48px 0;
-  .accountingName{
+
+  .accountingName {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -1083,7 +1145,8 @@ img{
     line-height: 48px;
     color: #000714;
   }
-  .accountingSection{
+
+  .accountingSection {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1094,7 +1157,8 @@ img{
     border: 1px solid #E5EBF7;
     box-sizing: border-box;
     border-radius: 8px;
-    span{
+
+    span {
       font-family: Inter;
       font-style: normal;
       font-weight: 500;
@@ -1102,6 +1166,74 @@ img{
       line-height: 32px;
       color: #000714;
     }
+  }
+
+  .acbacround {
+    background: #E5EBF7;
+    padding: 10px 0;
+    box-shadow: 0 0 0 0;
+    border: 0;
+
+    .lineac {
+       border: 1px solid #7B808C;
+       width: 100%;
+       margin: 15px 0;
+     }
+    .lineac2 {
+      border: 1px solid #7B808C;
+      width: 100%;
+      //margin: 10px 0;
+    }
+
+    span {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #0166FF;
+    }
+
+    .acbacround2 {
+      &:before {
+        display: none;
+      }
+
+      background: #E5EBF7;
+      box-shadow: 0 0 0 0;
+
+      .lineac2 {
+
+      }
+
+      span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0166FF;
+      }
+
+      .actitle2 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000714;
+      }
+    }
+
+  }
+
+  .actitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000714;
   }
 }
 
