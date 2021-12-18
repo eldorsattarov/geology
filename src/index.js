@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
@@ -16,11 +16,23 @@ import thunk from "redux-thunk";
 const store = createStore(rootReducer,compose(applyMiddleware(thunk),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <Suspense fallback={(<div>
+            <div className="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>)}>
+            <App/>
+        </Suspense>
+        {/*<App/>*/}
     </Provider>,
-  // <React.StrictMode>
-  //   <App/>
-  // </React.StrictMode>,
   document.getElementById('root')
 );
 

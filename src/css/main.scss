@@ -613,8 +613,8 @@
       text-align: center;
       background-color: #E5EBF7;
       border-radius: 64px;
-      padding: 40px 0;
-
+      padding: 40px 20px;
+       //height: 600px;
       h2 {
         font-family: Inter;
         font-style: normal;
@@ -632,6 +632,9 @@
         font-size: 24px;
         line-height: 32px;
         color: #424752;
+        //padding-bottom: 30px;
+        //margin-bottom: 20px;
+    height: 30px;
       }
 
       img {
@@ -640,10 +643,11 @@
       }
 
       a {
-        margin-top: 40px;
+        margin-top: 50px;
+        //margin-bottom: 30px;
         background-color: #0166FF;
         color: white;
-        width: 48%;
+        width: 58%;
         display: flex;
         align-items: center;
         padding: 12px 25px;
@@ -655,7 +659,6 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-
         img {
           width: 30px;
           height: 26px;
