@@ -18,7 +18,7 @@ const HomePageSection5 = () => {
     return (
         <div>
             {window.location.href.includes("/aloqa") ? <Header/> : ""}
-        <div className="section5" id="aloqa">
+        <div className="section5">
             <div className="container">
                 <div className="row">
                     <div className="col-4">
@@ -40,7 +40,7 @@ const HomePageSection5 = () => {
                             )
                         })}
                     </div>
-                    <div className="col-8">
+                    <div className="col-8 position-relative">
 
                         {/*<div className="mapContainer">*/}
                             <MapContainer/>

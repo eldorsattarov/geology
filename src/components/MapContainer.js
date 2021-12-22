@@ -5,7 +5,7 @@ const styleMainMap = {
     top: 0,
     width: '730px',
     height: '272px',
-    borderRadius : "30px"
+    borderRadius : "30px",
 };
 //
 // const MapContainer = () => (

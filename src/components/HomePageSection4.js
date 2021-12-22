@@ -26,7 +26,7 @@ const HomePageSection4 = () => {
                                     <div className="text-center d-flex justify-content-center">
                                         <a href={item.button_link} className="btn text-center" target="_blank">
                                             {item.button_txt}
-                                            <img src="./images/uzbekiston.png"/>
+                                            <img className="img" src={item.icon}/>
                                         </a>
                                     </div>
                                 </div>

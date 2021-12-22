@@ -90,15 +90,9 @@ const Enterprise1 = (props) => {
                                                     {props.vazifasi.map((item , index)=>{
                                                         return(
                                                             <div className="col-6" key={item.id}>
-                                                                <div className=" mt-3 d-flex ">
-                                                                    <div className="mr-2"><img src="./images/Ellipsee.png"/>
-                                                                    </div>
-                                                                    <span>{item.text}
-                                            {/*     ўз ваколатлари доирасида геологик қидирув ишларини <br/>*/}
-                                            {/*ривожлантиришнинг йиллик, ўрта муддатли ва узоқ муддатли <br/>*/}
-                                            {/*дастурларини ишлаб чиқиш ва шакллантиришда иштирок<br/>*/}
-                                            {/*этиш*/}
-                                            </span>
+                                                                <div className="mt-3 d-flex">
+                                                                    <div className="mr-2"><img src="./images/Ellipsee.png"/></div>
+                                                                        <span className="">{item.text}</span>
                                                                 </div>
                                                                 {/*                                   <div className=" mt-3 d-flex ">*/}
                                                                 {/*                                       <div className="mr-2"><img src="./images/Ellipsee.png"/>*/}

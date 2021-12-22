@@ -146,10 +146,9 @@ class Pagination extends Component {
                                    {
                                        data && data.length > 0 ?
                                            data.map((item, index) => (
-                                               <tr>
+                                               <tr className="mapTr">
                                                    <td scope="col">{item.id}</td>
-                                                   <td scope="col"><img style={{height: "50%", borderRadius: 50}}
-                                                                        src={item.avatar}></img></td>
+                                                   <td scope="col">{item.first_name}</td>
                                                    <td scope="col">{item.first_name} - {item.last_name}</td>
                                                    <td scope="col">{item.first_name} - {item.last_name}</td>
                                                    <td scope="col">{item.first_name} - {item.last_name}</td>

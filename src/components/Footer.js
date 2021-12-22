@@ -53,16 +53,16 @@ const Footer = () => {
                                     </div>
                                     <div className="footerDiv">
                                         <a href="#" className="footerLink2">Иш тартиби:</a><br/>
-                                        <a href="#" className="footerLink">09:00-18:00</a>
+                                        <a href="#" className="footerLink">{item.ish_tartibi}</a>
                                     </div>
                                 </div>
                                 <div className="footerDiv">
                                     <a href="#" className="footerLink">Ижтимоий тармоқлар</a>
                                 </div>
                                 <div className="mesenger">
-                                    <a href="#"><img src="./images/facebook.png"/></a>
-                                    <a href="#"><img src="./images/telegram.png"/></a>
-                                    <a href="#"><img src="./images/youtube.png"/></a>
+                                    <a href={item.social_media_link1} target="_blank"><img src={item.social_media_1}/></a>
+                                    <a href={item.social_media_link2} target="_blank"><img src={item.social_media_2}/></a>
+                                    <a href={item.social_media_link3} target="_blank"><img src={item.social_media_3}/></a>
                                 </div>
                             </div>
                             <div className="footerLine">
