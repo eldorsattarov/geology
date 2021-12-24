@@ -7,7 +7,6 @@ const CarouselPageOne = () => {
     return (
         <div>
             <Header/>
-
             <div className="carouselPageOne">
                 <div className="container">
                     <div className="row">
@@ -30,7 +29,6 @@ const CarouselPageOne = () => {
 
                             </p>
                             <img src="./images/Rectangle 25.png"/>
-
                         </div>
                         <div className="col-4">
                             <h2>Сўнгги янгиликлар</h2>

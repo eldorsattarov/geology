@@ -56,7 +56,7 @@ const App = (props) => {
                    {/*Bugalteriya xisobi*/}
                    <Route path="/accounting" exact component={Accounting}/>
                    {/*contact us*/}
-                   <Route path="/aloqa" exact component={HomePageSection5}/>
+                   <Route path="/communication" exact component={HomePageSection5}/>
 
                    {/*Mineral resurslar bazasi*/}
                    {/*<Route path="/mineralResources" exact component={MineralResources}/>*/}

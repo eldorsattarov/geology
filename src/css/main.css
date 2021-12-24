@@ -278,6 +278,7 @@ m .navbarNavLeft .korxona2:before {
 
 .navbarNavRight img {
   margin-right: 15px;
+  z-index: 0;
 }
 .navbarNavRight .aLink {
   font-family: Inter;
@@ -437,8 +438,13 @@ m .navbarNavLeft .korxona2:before {
 }
 
 .section3 {
+  height: 500px;
   position: relative;
   margin-top: 1px;
+}
+.section3 .NewIMG {
+  width: 100%;
+  height: 100vh;
 }
 .section3 img {
   width: 100%;
@@ -447,12 +453,12 @@ m .navbarNavLeft .korxona2:before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
-  height: 100%;
+  width: 65%;
+  height: 120%;
 }
 
 .section3Left {
-  width: 60%;
+  width: 45%;
   position: absolute;
   top: 0;
   margin-top: 50px;
@@ -565,6 +571,58 @@ m .navbarNavLeft .korxona2:before {
 
 .enterpriseOne {
   padding: 45px 0;
+}
+.enterpriseOne .acbacround {
+  background: #E5EBF7;
+  padding: 10px 0;
+  box-shadow: 0 0 0 0;
+  border: 0;
+}
+.enterpriseOne .acbacround h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.enterpriseOne .acbacround span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.enterpriseOne .acbacround .lineac {
+  border: 1px solid #7B808C;
+  width: 100%;
+  margin: 15px 0;
+}
+.enterpriseOne .acbacround .lineac2 {
+  border: 1px solid #7B808C;
+  width: 100%;
+}
+.enterpriseOne .acbacround .acbacround2 {
+  background: #E5EBF7;
+  box-shadow: 0 0 0 0;
+}
+.enterpriseOne .acbacround .acbacround2:before {
+  display: none;
+}
+.enterpriseOne .acbacround .acbacround2 span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0166FF;
+}
+.enterpriseOne .acbacround .acbacround2 .actitle2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000714;
 }
 .enterpriseOne .col-12 {
   padding: 0 0;

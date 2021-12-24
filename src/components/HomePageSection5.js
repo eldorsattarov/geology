@@ -17,7 +17,7 @@ const HomePageSection5 = () => {
     },[])
     return (
         <div>
-            {window.location.href.includes("/aloqa") ? <Header/> : ""}
+            {window.location.href.includes("/communication") ? <Header/> : ""}
         <div className="section5">
             <div className="container">
                 <div className="row">
@@ -50,7 +50,7 @@ const HomePageSection5 = () => {
                 </div>
             </div>
         </div>
-            {window.location.href.includes("/aloqa") ? <Footer/> : ""}
+            {window.location.href.includes("/communication") ? <Footer/> : ""}
         </div>
     );
 };

@@ -98,7 +98,7 @@ const HeaderUpper = (props) => {
                               {/*<a href="https://exarid.uzex.uz" target="_blank" className="aLink">Буғалтерия ҳисоботи</a>*/}
                               <Link to="/accounting" className="aLink">{t("navbar.moliyaviyXisobot")}</Link>
 
-                              <Link to="/aloqa" className="aLink">{t("navbar.aloqa")}</Link>
+                              <Link to="/communication" className="aLink">{t("navbar.aloqa")}</Link>
                           </div>
 
                           <div className="navbarNavRight d-flex align-items-center">
