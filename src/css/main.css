@@ -167,6 +167,7 @@
   font-family: Inter;
   color: black;
   font-weight: bold;
+  background-color: white;
 }
 .navbarNavLeft .korxona:before {
   content: "";
