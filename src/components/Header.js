@@ -80,8 +80,8 @@ const [chandeColor , setchandeColor] = useState(false);
 
 
 
-                            {/*<Link to="/loginEtp" className="text-decoration-none">*/}
-                            <Link to="/tadbirkor/korxonaHaqida" className="text-decoration-none">
+                            <Link to="/loginEtp" className="text-decoration-none">
+                            {/*<Link to="/tadbirkor/korxonaHaqida" className="text-decoration-none">*/}
                                 <span className="eri">{t("navbar.eri")}</span>
                             </Link>
 

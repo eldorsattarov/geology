@@ -12,7 +12,7 @@ export function updateState(data) {
 export const getNews = () => (dispatch) => {
     axios.get(API_PATH + "Yangiliklar/")
         .then((res) => {
-            console.log(res);
             dispatch(updateState({news: res.data.results}));
+            console.log(res)
         })
 };

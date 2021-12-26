@@ -5,13 +5,15 @@ import {API_PATH} from "../tools/constants";
 
 const HomePageSection2 = () => {
     const [mineral , setMineral] = useState([]);
+
     useEffect(()=>{
         axios.get(API_PATH + "Mineral-resurslar/")
             .then((res)=>{
                 // console.log(res)
                 setMineral(res.data.results);
             })
-    })
+    },[]);
+
     return (
         <div className="section2">
             <div className="container">

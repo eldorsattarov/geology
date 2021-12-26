@@ -9,10 +9,10 @@ const Footer = () => {
     useEffect(()=>{
         axios.get(API_PATH + "Footer/")
             .then((res)=>{
-                console.log(res)
+                console.log(res);
                 setFooter(res.data.results);
             })
-    },[])
+    },[]);
 
     return (
         <div className="footer">

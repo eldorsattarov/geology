@@ -479,7 +479,11 @@ m .navbarNavLeft .korxona2:before {
   color: #0166FF;
   text-decoration: none;
 }
-.section3Left span {
+.section3Left .batafsil {
+  max-height: 75px;
+  overflow: hidden;
+}
+.section3Left .batafsil span {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;

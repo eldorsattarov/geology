@@ -32,6 +32,7 @@ const Accounting = (props) => {
                             <h1 className="accountingName">Молиявий хисоботлар</h1>
                         </div>
                     </div>
+
                     <div className="row">
                         <div className="w-100 mt-3">
                         <Accordion className="acbacround">

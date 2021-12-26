@@ -11,7 +11,7 @@ const HomePageSection4 = () => {
                 console.log(res)
                 setXarita(res.data.results);
             })
-    },[])
+    },[]);
     return (
         <div className="section4">
             <div className="container">
