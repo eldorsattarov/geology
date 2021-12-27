@@ -20,7 +20,7 @@ const HomePageSection4 = () => {
                         return(
                             <div className="col-6" key={item.id}>
                                 <div className="card">
-                                    <div> <img src={item.img}/></div>
+                                    <div> <img src={item.img} className="imgXarita"/></div>
                                     <h2>{item.title}</h2>
                                     <p>{item.sub_title}</p>
                                     <div className="text-center d-flex justify-content-center">

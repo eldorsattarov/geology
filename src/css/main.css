@@ -524,6 +524,7 @@ m .navbarNavLeft .korxona2:before {
 .section4 .col-6 .card img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
 }
 .section4 .col-6 .card a {
   margin-top: 50px;

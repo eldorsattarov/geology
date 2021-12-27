@@ -14,7 +14,7 @@ const CarouselPageOne = () => {
                 setnewQisqa(res.data.results);
             })
     }, []);
-    // const newTeskari = newQisqa.reverse();
+    const newTeskari = newQisqa.reverse();
 
     return (
         <div>
@@ -24,7 +24,7 @@ const CarouselPageOne = () => {
                     <div className="row">
                         <div className="col-8 pl-0">
                             <h2>Минерал ресурслар институти технологик<br/> тадқиқотларини ўтказмоқда.</h2>
-                            {newQisqa.map((item,index)=>{
+                            {newTeskari.map((item,index)=>{
                                while (index<2){
                                    return(
                                        <div className="">
@@ -46,7 +46,7 @@ const CarouselPageOne = () => {
                         <div className="col-4">
                             <h2>Сўнгги янгиликлар</h2>
                             {
-                                newQisqa.map((item, index) => {
+                                newTeskari.map((item, index) => {
                                     while (index<3){
                                         return (
                                             <div className="card mt-4" key={item.id}>

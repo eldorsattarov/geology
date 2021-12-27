@@ -34,9 +34,6 @@ const App = (props) => {
     return (
        <div className={props.changeColor===true ? "chan" : ""}>
            <BrowserRouter>
-               {/*{window.location.href.includes("/aloqa") ? "" :*/}
-               {/*    <Header/>*/}
-               {/*}*/}
                <Switch>
                    <Route path="/login" exact component={Login}/>
                    {/*Korxona xaqida*/}
@@ -80,9 +77,6 @@ const App = (props) => {
                    <Route path="/tadbirkor/beshGr" exact component={BeshGRshakli}/>
 
                </Switch>
-
-               {/*{window.location.href.includes("/aloqa") ? "" : <Footer/>*/}
-               {/*}*/}
            </BrowserRouter>
        </div>
     );
