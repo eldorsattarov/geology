@@ -4,27 +4,97 @@ import axios from "axios";
 import {API_PATH} from "../tools/constants";
 
 const HomePageSection3 = () => {
-    let settings = {
+    // let settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     pauseOnHover: true
+    // };
+    const settings = {
         dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         autoplaySpeed: 2000,
-        pauseOnHover: true
+        speed: 2000,
+        autoplay:true,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 801,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 554,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{
+                    ...style,
+                    display: "block",
+                    background: "#888888",
+                    borderRadius: "50%",
+                }}
+                onClick={onClick}
+            />
+        );
+    }
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+
+        return (
+            <div
+                className={className}
+                style={{
+                    ...style,
+                    display: "block",
+                    background: "#888888",
+                    borderRadius: "50%",
+                }}
+                onClick={onClick}
+            />
+        );
+    }
+
+
     const [newCar, setnewCar] = useState([]);
     useEffect(() => {
         axios.get(API_PATH + "Yangiliklar/")
             .then((res) => {
                 setnewCar(res.data.results);
+                // setnewCar(newCar.reverse())
             });
     }, []);
-   const newCarTeskari = newCar.reverse();
+
+   // const newCarTeskari = newCar.reverse();
     return (
         <div>
             <Slider {...settings} className="overflow-hidden">
-                {newCarTeskari.map((item,index) =>{
+                {newCar.map((item,index) =>{
                     while (index<3){
                         return(
                             <div className="section3" key={item.id}>

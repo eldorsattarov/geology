@@ -15,9 +15,11 @@
   line-height: 24px;
   color: #FAF0EE;
   margin-top: 5%;
+  text-decoration: none;
 }
 .beshgrYuklash:hover {
   color: white;
+  text-decoration: none;
 }
 
 .main_text {

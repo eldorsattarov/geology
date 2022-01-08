@@ -19,7 +19,8 @@ const Stafff = (props) => {
         //         console.log(res);
         //         setStaf(res.data.results);
         //     })
-    },[])
+    },[]);
+    const staffTeskari = staf.reverse();
 
     const modalStyle = {
         content:{
@@ -32,7 +33,6 @@ const Stafff = (props) => {
     return (
         <div>
             <Header/>
-
             <div className="staff">
                 <div className="container p-0">
                     <div className="row p-0 ">
@@ -283,6 +283,7 @@ const Stafff = (props) => {
 const mapStateToProps =(state)=>{
     return{
         staf : state.staf.staf,
+        staf2 : state.staf.staf2,
         stafSelected: state.staf.stafSelected,
         open : state.staf.open
     }

@@ -5,6 +5,7 @@ import {STAF} from "../types/stafType";
 const intialState = {
     open : false,
     staf : [],
+    staf2 : [],
     stafSelected : {}
 }
 

@@ -11,7 +11,7 @@ const ReceiptOfReports = () => {
                    <p className="main_text">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни
                        қабул қилиш (5-ГР шакли)
                    </p>
-                   <a href="#" className="beshgrYuklash">5-ГР шаклини юклаш</a>
+                   <a href="/images/5gr.jpg" className="beshgrYuklash" target="_blank">5-ГР шаклини юклаш</a>
                </div>
 
 

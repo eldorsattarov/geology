@@ -13,6 +13,6 @@ export const getStaf = () => (dispatch) =>{
     axios.get(API_PATH + "Xodimlar/")
         .then((res)=>{
             console.log(res);
-            dispatch(stafState({staf : res.data.results}))
+            dispatch(stafState({staf : res.data.results}));
         })
 }

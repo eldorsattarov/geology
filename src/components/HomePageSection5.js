@@ -5,8 +5,9 @@ import Footer from "./Footer";
 import Header from "./Header";
 import axios from "axios";
 import {API_PATH} from "../tools/constants";
+import {useTranslation} from "react-i18next";
 const HomePageSection5 = () => {
-
+    const {t} = useTranslation();
     const [aloqa , setAloqa] = useState([]);
     useEffect(()=>{
         axios.get(API_PATH + "Offis/")
@@ -26,14 +27,14 @@ const HomePageSection5 = () => {
                             return(
                                 <>
                                     <div className="" key={item.id}>
-                                        <h3>Бош офисимиз,<br/>Тошкент шаҳар</h3>
+                                        <h3>{t("manzil.text")}</h3>
                                     </div>
                                     <div>
-                                        <h4>Манзил</h4>
+                                        <h4>{t("manzil.manzil")}</h4>
                                         <p>{item.address}</p>
                                     </div>
                                     <div>
-                                        <h4>Телефон</h4>
+                                        <h4>{t("manzil.telefon")}</h4>
                                         <p>{item.phone}</p>
                                     </div>
                                 </>

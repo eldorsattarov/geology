@@ -21,6 +21,7 @@ const HeaderUpper = (props) => {
     const{t} = useTranslation();
 
     useEffect(() => {
+
     }, []);
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -57,14 +58,14 @@ const HeaderUpper = (props) => {
                                       <div className="container">
                                           <div className="row" >
                                               <div className="col-12 links d-flex justify-content-between align-items-center">
-                                                  <Link className="tabLink" to="/enterprise1">“Давгеолахборотмарказ” ДК мақсад ва вазифалари</Link>
+                                                  <Link className="tabLink" to="/enterprise1">{t("korxonaXaqida.xaqida1")}</Link>
                                                   <a href="#"><img src="./images/fi_x2.png" onClick={()=>setOpenLink(!openLink)}/></a>
                                               </div>
-                                              <div className="col-12 links"><Link className="tabLink" to="/staff">Ходимлар</Link></div>
+                                              <div className="col-12 links"><Link className="tabLink" to="/staff">{t("korxonaXaqida.xaqida2")}</Link></div>
                                               {/*<div className="col-12 links"><Link className="tabLink" to="/enterprise2">Асосий тугалланган лойиҳалар</Link></div>*/}
                                               {/*<div className="col-12 links"><Link className="tabLink" to="/enterprise2">Саноат кўрсатмалар ва қоидалар</Link></div>*/}
-                                              <div className="col-12 links"><Link className="tabLink" to="/laws">Вазирлар Маҳкамасининг 546-сон қарори</Link></div>
-                                              <div className="col-12 links"><Link className="tabLink" to="/youthunion">Корхона Ёшлар Иттифоқи</Link>
+                                              <div className="col-12 links"><Link className="tabLink" to="/laws">{t("korxonaXaqida.xaqida3")}</Link></div>
+                                              <div className="col-12 links"><Link className="tabLink" to="/youthunion">{t("korxonaXaqida.xaqida4")}</Link>
                                               </div>
                                               {/*<div className="col-12 links"><Link className="tabLink" to="/">Касаба уюшмаси</Link></div>*/}
                                           </div>
@@ -81,7 +82,7 @@ const HeaderUpper = (props) => {
                                               {/*<Link to="/" className="tabLink">Геологик ҳисоботларнинг тезислари</Link>*/}
                                               <div className="col-12 links d-flex justify-content-between align-items-center">
                                                   <Link to="/reports" className="tabLink">
-                                                      Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисоботларни қабул қилиш (5-ГР шакли)</Link>
+                                                      {t("interaktivXizmat.interaktiv1")}</Link>
                                                   <a href="#"><img src="./images/fi_x2.png" onClick={()=>setOpenLink2(!openLink2)}/></a>
 
                                               </div>
@@ -89,7 +90,7 @@ const HeaderUpper = (props) => {
                                               {/*</div>*/}
                                               {/*<div className="col-12 links"><Link to="/cadastre">Кадастр объэктларининг паспортлари</Link></div>*/}
                                               {/*<div className="col-12 links"><Link to="/">Геологик маълумотлар тўпламини тақдим этиш</Link></div>*/}
-                                              <div className="col-12 links"><Link to="/specialists" className="tabLink">Фойдали қазилмалар захиралари ҳаракати тўғрисида ҳисобот олиш учун масъул мутахассисларнинг алоқалари (5-ГР шакли)</Link></div>
+                                              <div className="col-12 links"><Link to="/specialists" className="tabLink">{t("interaktivXizmat.interaktiv2")}</Link></div>
                                           </div>
                                       </div>
                                   </div>

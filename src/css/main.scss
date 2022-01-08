@@ -17,7 +17,9 @@
 //}
 $color-text: #000714;
 $color-back: #969696;
+.navbarTop{
 
+}
 .navbar1 {
   padding-bottom: 10px;
   border-bottom: 2px solid #E5EBF7;
@@ -32,7 +34,7 @@ $color-back: #969696;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #000714;
   margin-left: 10px;
@@ -751,12 +753,16 @@ $color-back: #969696;
       line-height: 32px;
     }
 
-    span {
+    a {
       font-family: Inter;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
     }
 
     .lineac {
@@ -1292,7 +1298,17 @@ $color-back: #969696;
       width: 100%;
       //margin: 10px 0;
     }
+a{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  &:hover{
+    text-decoration: none;
 
+  }
+}
     span {
       font-family: Inter;
       font-style: normal;

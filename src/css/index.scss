@@ -16,8 +16,10 @@
   line-height: 24px;
   color: #FAF0EE;
   margin-top: 5%;
+  text-decoration: none;
   &:hover{
     color: white;
+    text-decoration: none;
   }
 }
 .main_text{
@@ -146,6 +148,9 @@ padding: 20px 0;
 }
 .tablePagination{
   width: 2600px;
+  tr:nth-child(0){
+
+  }
 th{
   width: 60px;
 }

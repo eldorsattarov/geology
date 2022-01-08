@@ -39,9 +39,7 @@ const {t , i18n} = useTranslation();
 
 const [chandeColor , setchandeColor] = useState(false);
     const changeColor = () =>{
-        // setchandeColor(!chandeColor);
-        // console.log(chandeColor)
-        props.colorState({changeColor : !props.changeColor})
+        props.colorState({changeColor : !props.changeColor});
     }
     return (
         <div className="navbarTop">

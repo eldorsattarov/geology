@@ -19,13 +19,12 @@ class Pagination extends Component {
         age: '',
         age2: ''
     }
-
     componentDidMount() {
         this.loadData(1);
     }
 
     loadData = (page) => {
-        console.log('page>>', page)
+        // console.log('page>>', page)
         axios.get(`https://reqres.in/api/users?page=` + page)
             .then(res => {
                 const data = res.data;
