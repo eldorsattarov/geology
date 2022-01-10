@@ -23,24 +23,29 @@ const AllNews = (props) => {
                         <div className="row mt-3">
                             {props.news.map((item, index) => {
                                 return (
-                                    <div className="col-4 mt-4" key={item.id}>
-                                        <div className="card">
-                                            <div className="card-img-top">
-                                                <img src={item.img} className="w-100"/>
-                                                {/*<img src="./images/Rectangle 23.png" className="w-100"/>*/}
-                                            </div>
-                                            <div className="card-body">
-                                                <p>
-                                                    {item.text}
-                                                </p>
-                                            </div>
-                                            <div className="card-footer">
-                                                <div className="d-flex justify-content-end">
-                                                    <span>{item.date}</span>
+                                        <div className="col-4 mt-4" key={item.id}>
+                                            <Link to="/carouselPageOne" className="newsLink"
+                                                  onClick={()=>{props.selectedNews.splice(0, 1, item)}}
+                                            >
+                                            <div className="card">
+                                                <div className="card-img-top">
+                                                    <img src={item.img} className="w-100"/>
+                                                    {/*<img src="./images/Rectangle 23.png" className="w-100"/>*/}
+                                                </div>
+                                                <div className="card-body">
+                                                    <p>
+                                                        {item.text}
+                                                    </p>
+                                                </div>
+                                                <div className="card-footer">
+                                                    <div className="d-flex justify-content-end">
+                                                        <span>{item.date}</span>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            </Link>
                                         </div>
-                                    </div>
+
                                 )
                             })}
                         </div>
@@ -57,8 +62,8 @@ const AllNews = (props) => {
 const mapStateToProps = (state) => {
     return {
         open: state.news.open,
-        news: state.news.news
+        news: state.news.news,
+        selectedNews: state.news.selectedNews
     }
 }
 export default connect(mapStateToProps, {updateState, getNews})(AllNews);
-// export default AllNews;

@@ -75,9 +75,14 @@ const Footer = () => {
                         <span className="text-secondary ">
                             {t("footer.text")}
                         </span>
-                                <div className="text-secondary d-flex">
-                                    <a href="https://napaautomotive.uz/ru" className="mt-1" target="_blank"><img src="./images/Слой3.png"/></a>
-                                </div>
+                               <div>
+                                   <div className="text-secondary d-flex">
+                                       <a href="https://napaautomotive.uz/ru" className="mt-1" target="_blank"><img src="./images/Слой3.png"/></a>
+                                   </div>
+                                   <div className="mt-1">
+                                       <span>Developer </span><a href="https://t.me/developer_ES" target="_blank">Eldor</a>
+                                   </div>
+                               </div>
                             </div>
                         </div>
                     )

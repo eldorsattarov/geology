@@ -1,4 +1,5 @@
 .navbar1 {
+  position: relative;
   padding-bottom: 10px;
   border-bottom: 2px solid #E5EBF7;
 }
@@ -23,43 +24,50 @@
   margin-left: 10px;
 }
 
-.navbarTopRight {
-  position: relative;
-  width: 65%;
-  justify-content: end;
-}
-.navbarTopRight .imgFrom {
-  position: absolute;
-  left: -80%;
-  z-index: 1;
-  background-color: white;
-  padding: 0px 10px;
-}
-.navbarTopRight .imgFrom img {
-  width: 20px;
-  height: 20px;
-}
-.navbarTopRight .dNone {
+.dNone2 {
   display: none;
 }
-.navbarTopRight .avform {
+
+.dNone3 {
+  display: none !important;
+}
+
+.imgFrom {
+  position: absolute;
+  left: 23%;
+  z-index: 1;
+  padding: 0px 10px;
+  width: 45%;
+  height: 100%;
+}
+.imgFrom img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.imgFrom .avform {
+  width: 100%;
   height: auto;
-  width: 58%;
   left: 0;
   margin-top: 15px;
   box-shadow: 0 0 0 0;
 }
-.navbarTopRight .avform .avform2 {
+.imgFrom .avform .avform2 {
   border: 0;
-  width: 270%;
   box-shadow: 0 0 0 0;
+  width: 100%;
 }
-.navbarTopRight .avform .avform2 placeholder {
+.imgFrom .avform .avform2 placeholder {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+.navbarTopRight {
+  width: 65%;
+  justify-content: end;
 }
 .navbarTopRight img {
   margin-right: 18px;
@@ -119,6 +127,7 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 7, 20, 0.15);
   padding-bottom: 15px;
+  position: relative;
 }
 .navbarNav .aLink {
   position: relative;
@@ -183,7 +192,7 @@
   height: 3px;
 }
 .navbarNavLeft .active .korxonaLink {
-  top: 120px;
+  top: 43px;
 }
 .navbarNavLeft .korxonaLink {
   padding-top: 15px;
@@ -192,9 +201,10 @@
   position: absolute;
   z-index: 1;
   opacity: revert;
-  left: 0;
   top: -385px;
   width: 100%;
+  right: 0;
+  left: 0;
   background-color: white;
   height: 250px;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
@@ -226,7 +236,7 @@
   font-weight: bold;
   margin-left: 15px;
 }
-m .navbarNavLeft .korxona2:before {
+.navbarNavLeft .korxona2:before {
   content: "";
   position: absolute;
   margin-left: 0;
@@ -240,7 +250,7 @@ m .navbarNavLeft .korxona2:before {
   height: 3px;
 }
 .navbarNavLeft .active2 .korxonaLink2 {
-  top: 120px;
+  top: 43px;
 }
 .navbarNavLeft .korxonaLink2 {
   padding-top: 15px;
@@ -249,7 +259,7 @@ m .navbarNavLeft .korxona2:before {
   position: absolute;
   z-index: 1;
   left: 0;
-  top: -255px;
+  top: -355px;
   width: 100%;
   background-color: white;
   height: 248px;
@@ -483,6 +493,7 @@ m .navbarNavLeft .korxona2:before {
 .section3Left .batafsil {
   max-height: 75px;
   overflow: hidden;
+  margin-top: 10px;
 }
 .section3Left .batafsil span {
   font-family: Inter;
@@ -490,6 +501,24 @@ m .navbarNavLeft .korxona2:before {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+.section3Left .batafsil1 {
+  max-height: 160px;
+  overflow: hidden;
+}
+.section3Left .batafsilNew {
+  margin-top: 40px;
+}
+.section3Left .batafsilNew a {
+  border: 2px solid #0166FF;
+  color: #0166FF;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.section3Left .batafsilNew a:hover {
+  text-decoration: none;
 }
 
 .section4 {

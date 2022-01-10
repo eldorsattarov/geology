@@ -159,11 +159,11 @@ const Accounting = (props) => {
                     })}
                     </div>
 
-                    <div className="row mt-4">
-                        <Stack spacing={1}>
-                        <Pagination count={10} variant="outlined" shape="rounded" color="primary"></Pagination>
-                        </Stack>
-                    </div>
+                    {/*<div className="row mt-4">*/}
+                    {/*    <Stack spacing={1}>*/}
+                    {/*    <Pagination count={10} variant="outlined" shape="rounded" color="primary"></Pagination>*/}
+                    {/*    </Stack>*/}
+                    {/*</div>*/}
                 </div>
             </div>
             <Footer/>

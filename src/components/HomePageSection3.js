@@ -2,8 +2,11 @@ import React, {useState, useEffect} from 'react';
 import Slider from "react-slick";
 import axios from "axios";
 import {API_PATH} from "../tools/constants";
+import {Link} from "react-router-dom";
+import {connect} from "react-redux";
+import {getNews, updateState} from "../redux/actions/carouselNewsAction";
 
-const HomePageSection3 = () => {
+const HomePageSection3 = (props) => {
     // let settings = {
     //     dots: true,
     //     infinite: true,
@@ -94,8 +97,8 @@ const HomePageSection3 = () => {
     return (
         <div>
             <Slider {...settings} className="overflow-hidden">
-                {newCar.map((item,index) =>{
-                    while (index<3){
+                {newCar.reverse().map((item,index) =>{
+                    while (index<4){
                         return(
                             <div className="section3" key={item.id}>
                                 <img src={item.img} className="w-100 NewIMG"/>
@@ -103,11 +106,18 @@ const HomePageSection3 = () => {
                                 <div className="container">
                                     <div className="row">
                                         <div className="section3Left">
-                                            <p>
-                                                {item.text}
-                                            </p>
+                                            <div className="batafsil1">
+                                                <p>
+                                                    {item.text}
+                                                </p>
+                                            </div>
                                             <div className="batafsil">
                                                 <span>{item.batafsil}</span>
+                                            </div>
+                                            <div className="batafsilNew">
+                                                <Link to="/carouselPageOne"
+                                                      onClick={()=>{props.selectedNews.splice(0, 1, item)}}
+                                                >Batafsil...</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -177,4 +187,12 @@ const HomePageSection3 = () => {
     );
 };
 
-export default HomePageSection3;
+const mapStateToProps = (state) => {
+    return {
+        open: state.news.open,
+        news: state.news.news,
+        selectedNews: state.news.selectedNews
+    }
+}
+export default connect(mapStateToProps, {updateState, getNews})(HomePageSection3);
+

@@ -13,8 +13,8 @@ const Gealogiya = () => {
     return (
         <div>
             <Header/>
-            {/*<HomePageSecion1/>*/}
-            <Link to="/carouselPageOne" className="text-dark"><HomePageSection3/></Link>
+            <HomePageSection3/>
+            {/*<Link to="/carouselPageOne" className="text-dark"><HomePageSection3/></Link>*/}
             <HomePageSection4/>
             <HomePageSection2/>
             <HomePageSection5/>

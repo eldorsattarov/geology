@@ -2,7 +2,8 @@ import {UPDATE_STATE} from "../types/newsType";
 
 const initialState = {
     open : false,
-    news : []
+    news : [],
+    selectedNews : []
 }
 
 export const carouselNewsReducer = (state = initialState, action) => {

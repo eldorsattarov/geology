@@ -55,6 +55,7 @@ const HeaderUpper = (props) => {
                               <div className={`korxona ${openLink === true ? 'active' : ""}`}>
                                   <a href="#" onClick={() => linkOpen()} className="aLink">{t("navbar.korxonaXaqida")}</a>
                                   <div className={`korxonaLink`}>
+                                  {/*<div className={openLink === false ? "korxonaLink d-none" : "korxonaLink"}>*/}
                                       <div className="container">
                                           <div className="row" >
                                               <div className="col-12 links d-flex justify-content-between align-items-center">
@@ -97,7 +98,7 @@ const HeaderUpper = (props) => {
                               </div>
 
                               {/*<a href="https://exarid.uzex.uz" target="_blank" className="aLink">Буғалтерия ҳисоботи</a>*/}
-                              <Link to="/accounting" className="aLink">{t("navbar.moliyaviyXisobot")}</Link>
+                              <Link to="/financial" className="aLink">{t("navbar.moliyaviyXisobot")}</Link>
 
                               <Link to="/communication" className="aLink">{t("navbar.aloqa")}</Link>
                           </div>

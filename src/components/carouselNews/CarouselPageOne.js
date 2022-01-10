@@ -4,18 +4,19 @@ import Footer from "../Footer";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import {API_PATH} from "../../tools/constants";
+import {connect} from "react-redux";
+import {updateState} from "../../redux/actions/carouselNewsAction";
 
-const CarouselPageOne = () => {
+const CarouselPageOne = (props) => {
+
     const [newQisqa, setnewQisqa] = useState([]);
     const [newQisqa2, setnewQisqa2] = useState([]);
     useEffect(() => {
         axios.get(API_PATH + "Yangiliklar/")
             .then((res) => {
                 setnewQisqa(res.data.results);
-                // setnewQisqa(newQisqa.reverse())
             })
     }, []);
-    const newTeskari = newQisqa.reverse();
 
     return (
         <div>
@@ -24,21 +25,26 @@ const CarouselPageOne = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-8 pl-0">
-                            <h2>Минерал ресурслар институти технологик<br/> тадқиқотларини ўтказмоқда.</h2>
-                            {newQisqa.map((item,index)=>{
+                            {/*<h2>Минерал ресурслар институти технологик<br/> тадқиқотларини ўтказмоқда.</h2>*/}
+                            {/*{newQisqa.map((item,index)=>{*/}
+                            {props.selectedNews.length!==0 ? props.selectedNews.map((item,index)=>{
+                                    while (index<2){
+                                        return(
+                                            <div className="">
+                                                <h2>{item.text}</h2>
+                                                <img src={item.img}/>
+                                                <p>{item.batafsil}</p>
+                                            </div>
+                                        )
+                                    }
+                                }) :
+                                newQisqa.map((item,index)=>{
                                while (index<2){
                                    return(
                                        <div className="">
-                                           {/*<p>*/}
-                                           {/*Минерал ресурслар институти “Ўзбекистондаги конлар ва маъдан намоёнларида олтин таркибли*/}
-                                           {/*маъданларни қайта ишлашнинг самарали технологик схемаларини ишлаб чиқиш” лойиҳаси*/}
-                                           {/*доирасида Лолазор ва Байрам майдонларидан олинган технологик намуналарда*/}
-                                           {/*лаборатория*/}
-                                           {/*миқёсида технологик тадқиқотларини ўтказмоқда.*/}
-                                           {/*</p>*/}
+                                           <h2>{item.text}</h2>
                                            <img src={item.img}/>
                                            <p>{item.batafsil}</p>
-                                           {/*<img src="./images/Rectangle 25.png"/>*/}
                                        </div>
                                    )
                                }
@@ -46,10 +52,12 @@ const CarouselPageOne = () => {
                         </div>
                         <div className="col-4">
                             <h2>Сўнгги янгиликлар</h2>
-                            {
-                                newQisqa.map((item, index) => {
+                            {newQisqa.reverse().map((item, index) => {
                                     while (index<3){
                                         return (
+                                            // onClick={()=>{props.selectedNews.splice(0, 1, item)}}
+                                           <Link to="/carouselPageOne" className="linkkk"
+                                                 onClick={()=>{props.selectedNews.splice(0, 1, item)}}>
                                             <div className="card mt-4" key={item.id}>
                                                 <div className="card-img-top">
                                                     <img src={item.img} className='w-100'/>
@@ -63,6 +71,7 @@ const CarouselPageOne = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                           </Link>
                                         )
                                     }
                                 })
@@ -127,5 +136,11 @@ const CarouselPageOne = () => {
         </div>
     );
 };
+const mapStateToProps = (state) =>{
+ return{
+     news: state.news.news,
+     selectedNews: state.news.selectedNews
+ }
+}
 
-export default CarouselPageOne;
+export default connect(mapStateToProps,{updateState})(CarouselPageOne);

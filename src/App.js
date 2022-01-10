@@ -51,7 +51,7 @@ const App = (props) => {
                    <Route path="/cadastre" exact component={Cadastre}/>
 
                    {/*Bugalteriya xisobi*/}
-                   <Route path="/accounting" exact component={Accounting}/>
+                   <Route path="/financial" exact component={Accounting}/>
                    {/*contact us*/}
                    <Route path="/communication" exact component={HomePageSection5}/>
 
